@@ -9,7 +9,7 @@ $(document).ready(function() {
 /* *************************** */
 $(function () {
   count = 0;
-  wordsArray = ['<span class="customize_title">customize for $10 (free shipping)</span>', '<span class="made_title">made with <span class="red_heart">❤</span> at BibleCups.com</span>'];
+  wordsArray = ['<span class="customize_title">customize for $10 & free shipping</span>', '<span class="made_title">made with <span class="red_heart">❤</span> at BibleCups.com</span>'];
   setInterval(function () {
     count++;
     $("#site_title").fadeOut(400, function () {
@@ -974,6 +974,10 @@ $(".selected_verse").text(completeRefNeeded);
         $(".modal_customize_name").show();
         $(".opacity_cover").show();
 		$('#customize_name').focus();
+// re-render just in case, since sometimes it doesn't
+setTimeout(function(){
+$(".rendered_customerName_in_modalName,.rendered_customerName_in_modalPictures,.rendered_customerName_in_modalBackgrounds,.rendered_customerName_in_modalReviewOrder").textfill({maxFontPixels:200});
+}, 500);
 });
 // first I need to render it in the rendered_customerName_in_modalName
 //AND ALSO IN rendered_customerName_in_modalPictures AND ALSO IN rendered_customerName_in_modalBackgrounds AND ALSO IN rendered_customerName_in_modalReviewOrder

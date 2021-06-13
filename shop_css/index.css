@@ -1682,6 +1682,7 @@ height: 302px;
 .made_title {
   font-family: "Jura-Regular" !important;
 	font-size: 19px !important;
+  font-weight: normal;
 }
 
 /*///////////////////////////////////////////////////
@@ -1744,6 +1745,7 @@ position: absolute;
       width: 100%;
       font-family: "LoversQuarrel-Regular";
       font-size: 44px;
+      font-weight: normal;
       text-align: center;
       left: 0px;
       color: black;
