@@ -1372,11 +1372,12 @@ $( ".placeOrder" ).on( "click", function() {
 
   // hide any and all modals when click on menu, except menu_modal
   $("#menu").click(function() {
-  $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order, .help_modal").hide();
+  $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order, .about_modal, .help_modal").hide();
+  $("#PureChatWidget").attr("style", "z-index: -1 !important");
   });
   // hide any and all modals when click outside
   $(".opacity_cover, .wrap_gofundme_modal_bar").click(function() {
-  $(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order, .help_modal").hide();
+  $(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order, .about_modal, .help_modal").hide();
   });
 
   // ////////////////////////// -->
@@ -1446,6 +1447,15 @@ $('.modal_place_the_order').show();
 }(jQuery))
 // END blink.js
 
+////////////////////////////////////////////////////
+////BEGIN about modal ///////////////////////
+////////////////////////////////////////////////////
+$( "#about" ).on( "click", function() {
+$( ".about_modal" ).show('slow');
+});
+////////////////////////////////////////////////////
+////END about modal ///////////////////////
+////////////////////////////////////////////////////
 ////////////////////////////////////////////////////
 ////BEGIN help modal ///////////////////////
 ////////////////////////////////////////////////////
@@ -1868,7 +1878,7 @@ $(function(){
         // purechat-btn
         $("#PureChatWidget").find(".purechat-btn").attr("style", "color: #d5ad6d !important");
         // purechat-widget-title-link
-        $("#PureChatWidget").find(".purechat-widget-title-link").attr("style", "font-size: 20px !important;padding-left: 8px !important;font-family: PT_Sans-Narrow-Web-Regular !important;color: #d5ad6d !important;text-shadow: 2px 2px 1px black !important");
+        $("#PureChatWidget").find(".purechat-widget-title-link").attr("style", "font-size: 20px !important;padding-left: 8px !important;font-family: OpenSansCondensed-Light !important;color: #d5ad6d !important;text-shadow: 2px 2px 1px black !important");
         // keep widget expanded
         $("#PureChatWidget").removeClass("purechat-widget-super-collapsed");
         $("#PureChatWidget").addClass("purechat-widget-collapsed");
@@ -1977,6 +1987,71 @@ $("#menu").on("click", function() {
 /* *************************** */
 /* *************************** */
 
+////////////////////////////////////////////////////
+// BEGIN addthis hack follow area
+////////////////////////////////////////////////////
+  var stopWhenCompleted_addthis_is_loaded = setInterval(function() {
+    if (
+      $(".wrap_addthis_follow").find(
+        '.at-icon-messenger title:contains("Messenger")'
+      ).length > 0
+    ) {
+      console.log("stopWhenCompleted_addthis_is_loaded Let's hack @ 1000");
+      // addthis shadow hack to SHARING AND FOLLOW
+      setTimeout(function() {
+        $(".wrap_addthis_follow")
+          .find(".at-icon-wrapper")
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
+        console.log("/////// applied addthis shadow SHARING hack @ + 1000");
+      }, 1000);
+      // addthis FOLLOW margin hack
+      setTimeout(function() {
+        $(".wrap_addthis_follow")
+          .find(".addthis_toolbox a")
+          .css("margin-left", "6px")
+          .css("margin-right", "6px");
+        $(".wrap_addthis_follow")
+          .find("p")
+          .css("margin-top", "-8px");
+        console.log("/////// applied addthis margin FOLLOW hack @ + 2000");
+      }, 2000);
+      // addthis FOLLOW flex hack
+      setTimeout(function() {
+        $(".wrap_addthis_follow")
+          .find(".addthis_toolbox")
+          .css("display", "flex")
+          .css("flex-direction", "row")
+          .css("flex-wrap", "wrap")
+          .css("align-content", "center")
+          .css("justify-content", "center")
+          .css("align-items", "center")
+        console.log("/////// applied addthis flex FOLLOW hack @ + 2500");
+      }, 2500);
+      // addthis FOLLOW size hack
+      setTimeout(function() {
+        $(".wrap_addthis_follow")
+          .find(".at-icon-wrapper, svg.at-icon")
+          .css("width", "44px")
+          .css("height", "44px")
+          .css("line-height", "44px");
+        console.log("/////// applied addthis size FOLLOW hack @ + 3000");
+      }, 3000);
+      // addthis FOLLOW shadow hack
+      setTimeout(function() {
+        $(".wrap_addthis_follow")
+          .find("svg")
+          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
+          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
+        console.log("/////// applied addthis shadow FOLLOW hack @ + 3500");
+      }, 3500);
+
+      clearInterval(stopWhenCompleted_addthis_is_loaded);
+    }
+  }, 13000);
+////////////////////////////////////////////////////
+// END addthis hack follow area
+////////////////////////////////////////////////////
 
 
 

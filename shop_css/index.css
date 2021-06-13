@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "PT_Sans-Narrow-Web-Regular";
-  src: url(../shop_fonts/PT_Sans-Narrow-Web-Regular.ttf) format("truetype");
+  font-family: "OpenSansCondensed-Light";
+  src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("truetype");
 }
 @font-face {
   font-family: "Jura-Regular";
@@ -10,6 +10,7 @@
   font-family: "LoversQuarrel-Regular";
   src: url(../shop_fonts/LoversQuarrel-Regular.ttf) format("truetype");
 }
+/*
 @font-face {
   font-family: "NeogreyMedium";
   src: url(../shop_fonts/NeogreyMedium.otf) format("truetype");
@@ -22,10 +23,7 @@
   font-family: "Thekingofromance-z8jDX";
   src: url(../shop_fonts/Thekingofromance-z8jDX.otf) format("opentype");
 }
-@font-face {
-  font-family: 'OpenSansCondensed-Light';
-  src: url(../shop_fonts/OpenSansCondensed-Light.ttf) format("opentype");
-}
+*/
 
 
 /* *************************** */
@@ -57,8 +55,9 @@
     body {
       position: relative;
       height: 100%;
-      font-family: "PT_Sans-Narrow-Web-Regular", sans-serif;
+      font-family: "OpenSansCondensed-Light", sans-serif;
       font-size: 20px;
+      font-weight: bold;
       color: #ae9c80;
       margin: 0 auto;
       background: black;
@@ -89,7 +88,7 @@
       text-align: center;
       border: 0px solid black;
       font-size: 20px;
-      font-family: "PT_Sans-Narrow-Web-Regular",sans-serif;
+      font-family: "OpenSansCondensed-Light",sans-serif;
       line-height: 50px;
       width: 100%;
 	  overflow: hidden;
@@ -337,7 +336,7 @@ text-align: center;
 /* *************************** */
 /* *************************** */
 
-.help_modal {
+.about_modal {
       position: fixed;
       display: none;
       height: 454px;
@@ -349,6 +348,18 @@ text-align: center;
       padding: 8px;
       text-shadow: 2px 2px 1px #000000;
     }
+    .help_modal {
+          position: fixed;
+          display: none;
+          height: 454px;
+          width: 296px;
+          top: calc(4px + 44px);
+          left: 4px;
+          background: #111111;
+          z-index: 1;
+          padding: 8px;
+          text-shadow: 2px 2px 1px #000000;
+        }
 
 
 .wrap_menu_items {
@@ -367,7 +378,6 @@ max-width: 320px;
 }
 .menu_item {
     flex: inherit;
-    font-weight: normal;
     font-size: 20px;
     justify-content: center;
     border-style: solid;
@@ -382,7 +392,7 @@ max-width: 320px;
 
 
 .top_title {
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-size: 18px;
 }
 .flex_item {
@@ -399,7 +409,7 @@ border-width: 0px;
     color: red;
     height: 22px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
 	text-align: center;
 	width: 280px;
@@ -413,7 +423,7 @@ border-width: 0px;
 	text-shadow: 2px 2px 1px #000000;
     height: 22px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
 	text-align: center;
 	width: 100px;
@@ -427,7 +437,7 @@ border-width: 0px;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -465,7 +475,7 @@ border-width: 0px;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
     width: 155px;
@@ -482,7 +492,7 @@ border-width: 0px;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
     width: 63px;
@@ -499,7 +509,7 @@ border-width: 0px;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
     width: 63px;
@@ -544,7 +554,7 @@ background: rgb(0 90 0);
 width: 122px;
     height: 22px;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     padding: 4px 4px 4px 4px;
     background-color: #222222;
@@ -592,19 +602,18 @@ text-align: center;
 .selected_bible_ref_fixed_on_mug_in_modalReviewOrder {
 position: fixed;
 display: block;
-top: 352px;
+top: 354px;
 left: 170px;
 width: 96px;
 height: 10px;
 line-height: 10px;
-font-family: "NeogreyMedium";
-font-size: 5px;
-font-weight: bold;
+font-family: "Jura-Regular";
+font-size: 6px;
 color: #000000;
 text-align: center;
 z-index: 1;
 text-shadow: none;
-filter: drop-shadow(0px 0px 2px gray);
+filter: drop-shadow(0px 0px 4px gray);
 }
 
 
@@ -1026,23 +1035,22 @@ text-shadow: none;
 .made_with_love_fixed_on_mug_little_Left {
 position: fixed;
 display: block;
-top: 352px;
+top: 354px;
 left: 55px;
 width: 96px;
 height: 10px;
 line-height: 10px;
-font-family: "NeogreyMedium";
-font-size: 5px;
-font-weight: bold;
+font-family: "Jura-Regular";
+font-size: 6px;
 color: #000000;
 text-align: center;
 text-shadow: none;
 z-index: 1;
-filter: drop-shadow(0px 0px 2px gray);
+filter: drop-shadow(0px 0px 4px gray);
 }
 .heart_fixed_on_mug_little_Left {
 color: red;
-font-size: 5px;
+font-size: 6px;
 text-shadow: none;
 }
 
@@ -1264,7 +1272,7 @@ line-height: 42px;
 text-align:center;
     color: #d5ad6d;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     background: #333333;
     padding: 0px;
@@ -1277,7 +1285,7 @@ line-height: 42px;
 text-align:center;
     color: #d5ad6d;
     font-size: 20px;
-    font-family: 'PT_Sans-Narrow-Web-Regular';
+    font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     background: #000000;
     padding: 0px;
@@ -1547,7 +1555,7 @@ position: fixed;
 }
 .customCSSforScenery_item_little_Left {
       max-width: 84px;
-      filter: drop-shadow(0px 0px 4px #444444);
+      filter: drop-shadow(0px 0px 6px gray);
 }
 .customCSSforFlowers_flex_little_Left {
 position: fixed;
@@ -1667,12 +1675,13 @@ height: 302px;
 
 #site_title {margin-left: 32px;}
 .customize_title {
-  font-family: "PT_Sans-Narrow-Web-Regular" !important;
-	font-size: 19px !important;
+  font-family: "OpenSansCondensed-Light" !important;
+	font-size: 22px !important;
+  font-weight: bold;
 }
 .made_title {
-  font-family: "NeogreyMedium" !important;
-	font-size: 14px !important;
+  font-family: "Jura-Regular" !important;
+	font-size: 19px !important;
 }
 
 /*///////////////////////////////////////////////////
@@ -1742,4 +1751,7 @@ position: absolute;
     }
 .hidden_submit_name {
   display: none;
+}
+.selected_bible_ref_fixed_on_mug, .rendered_customerName_in_modalName, .made_with_love_fixed_on_mug, .rendered_customerName_in_modalPictures, .rendered_customerName_in_modalReviewOrder, .made_with_love_fixed_on_mug_little_Left, .selected_bible_ref_fixed_on_mug_in_modalReviewOrder {
+font-weight: normal;
 }
