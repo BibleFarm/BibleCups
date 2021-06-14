@@ -191,14 +191,6 @@ text-align: center;
       background-color: #111111;
     }
 
-    .open_purechat {
-      flex-grow: 1;
-      flex-shrink: 1;
-      cursor: pointer;
-      text-align: center;
-      background-color: #111111;
-    }
-
     a.bf_links {
       color: #d5ad6d;
     }
@@ -415,21 +407,36 @@ border-width: 0px;
 	width: 280px;
 }
 input.order-amount {
+  border-width: 0px;
+      border: 0;
+      outline: 0;
+      color: #d5ad6d;
+      text-shadow: 2px 2px 1px #000000;
+      font-size: 20px;
+      font-family: 'OpenSansCondensed-Light';
+      width: 100px;
+      background: #333333;
+      height: 42px;
+      font-weight: bold;
+      text-align: center;
+      padding: 0px;
+}
+input.customize_name {
 border-width: 0px;
     border: 0;
     outline: 0;
-    background: none;
     color: #d5ad6d;
 	text-shadow: 2px 2px 1px #000000;
-    height: 22px;
+    height: 42px;
     font-size: 20px;
     font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
-	text-align: center;
-	width: 100px;
-	background: #333333;
+    text-align: center;
+    width: 100%;
+    background: #333333;
+    padding: 0px;
 }
-input.customize_name {
+input.customize_email {
 border-width: 0px;
     border: 0;
     outline: 0;
@@ -710,11 +717,13 @@ filter: drop-shadow(0px 0px 4px gray);
 #descriptionError, #priceLabelError {
 line-height: 22px;
 padding: 0px;
+padding-top: 4px;
 margin-block-start: 0px;
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 	text-shadow: none;
+  color: rgb(255, 87, 87);
 }
 #descriptionError {display:none;}
 #invoiceidError {display:none;}
@@ -1491,7 +1500,7 @@ display: ;
 display: none;
 	background: #111111;
 }
-#hidden_book_desired,#hidden_chapter_desired,#hidden_verse_desired,#hidden_name_desired,#hidden_flower_desired,#hidden_background_desired, #hidden_lastClickedFlowerIndex {display:none;}
+#hidden_book_desired,#hidden_chapter_desired,#hidden_verse_desired,#hidden_name_desired,#hidden_flower_desired,#hidden_background_desired, #hidden_lastClickedFlowerIndex, #hidden_USPS_Tracking_Email, #hidden_Total_Amount, #hidden_Complete_Description {display:none;}
 
 .still_need_to_select_chapter_and_verse {display:none;}
 
@@ -1756,4 +1765,49 @@ position: absolute;
 }
 .selected_bible_ref_fixed_on_mug, .rendered_customerName_in_modalName, .made_with_love_fixed_on_mug, .rendered_customerName_in_modalPictures, .rendered_customerName_in_modalReviewOrder, .made_with_love_fixed_on_mug_little_Left, .selected_bible_ref_fixed_on_mug_in_modalReviewOrder {
 font-weight: normal;
+}
+.about_flexed_content {
+  display: flex;
+  flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .about_flexed_title {
+      padding: 4px;
+          font-family: 'Jura-Regular';
+          font-weight: normal;
+          font-size: 17px;
+    }
+    .about_flexed_item {
+      padding: 4px;
+    }
+    .help_flexed_content {
+      display: flex;
+      flex-direction: row;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        .help_flexed_title {
+          padding: 4px;
+              font-family: 'Jura-Regular';
+              font-weight: normal;
+              font-size: 17px;
+        }
+        .help_flexed_item {
+          padding: 4px;
+        }
+.wrap_help_icons {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.help_icons_flex_item {
+  padding: 8px;
 }

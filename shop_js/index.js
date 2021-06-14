@@ -275,50 +275,6 @@ console.log('Verse changed to: ' + selected_verse);
 // BEGIN When coming from the menu Create Your Own ///// -->
 ////////////////////////// -->
 $( ".CreateYourOwnDesign" ).on( "click", function() {
-	///////////////////////////////////////////////////
-	/// BEGIN waitingto_load_verse_countdown ///////
-	///////////////////////////////////////////////////
-  /*
-$('.popup_ok_this_verse_selected').show();
-$(".wait_to_load_options").show();
-    $('.hidden_1').removeClass('class_hide_show');
-    $('.hidden_2').removeClass('class_hide_show');
-    $('.hidden_3').removeClass('class_hide_show');
-    $('.hidden_4').removeClass('class_hide_show');
-	var timer1,
-		clock = 3;
-	$(startup);
-	function startup() {
-		$(start).trigger({
-			type: "click",
-			which: 1
-		});
-	}
-	function start() {
-		clock = 3;
-		$(".countdown_loading_addthis_options").html("" + clock + "");
-		timer1 = setInterval(countdown, 1000);
-	}
-	function countdown() {
-		clock -= 1;
-		$(".countdown_loading_addthis_options").html("" + clock + "");
-		if (clock == 0) {
-			clearInterval(timer1);
-			$("#btn_countdown_start").prop("disabled", false);
-			$(".wait_to_load_options").hide("slow");
-		}
-	}
-  setTimeout(function() {
-$('.popup_ok_this_verse_selected').hide("slow");
-    $('.hidden_1').addClass('class_hide_show');
-    $('.hidden_2').addClass('class_hide_show');
-    $('.hidden_3').addClass('class_hide_show');
-    $('.hidden_4').addClass('class_hide_show');
-  }, 3500);
-  */
-	///////////////////////////////////////////////////
-	/// END waitingto_load_verse_countdown ///////
-	///////////////////////////////////////////////////
 // close the menu_modal
         $(".menu_modal").hide();
 // open the modal
@@ -1321,26 +1277,6 @@ $('.container_showing_selected_background').attr("src", "bg-bleed/" + selectedBa
   $(".wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery").hide();
   $(".modal_review_the_order").show();
         $(".opacity_cover").show();
-// grab the hidden text divs and combine them into the complete order details
-$('#description').val('');
-
-var customerName = $("#hidden_name_desired").text();
-console.log('customerName is: ' + customerName);
-
-var customerVerse = ($('#hidden_book_desired').text() + '-' + $('#hidden_chapter_desired').text() + '-' + $('#hidden_verse_desired').text());
-console.log('customerVerse is: ' + customerVerse);
-
-var customerPicture = $("#hidden_picture_desired").text();
-console.log('customerPicture is: ' + customerPicture);
-
-var customerBackground = $("#hidden_background_desired").text();
-console.log('customerBackground is: ' + customerBackground);
-
-var completeDescription = customerVerse + " - " + customerName + " - " + customerPicture + " - " + customerBackground;
-console.log('completeDescription is: ' + completeDescription);
-
-$('#amount').val('');
-$('#description').val(completeDescription);
 // re-render the textfill
 	function renderIn_modalReviewOrder() {
 		$('.populated_verse_with_ajax_in_modalReviewOrder').html(
@@ -1368,7 +1304,43 @@ console.log("The 5 seconds went by, so we should now have it rendered.");
 $( ".placeOrder" ).on( "click", function() {
         $(".modal_place_the_order").show();
         $(".opacity_cover").show();
-		$('.order-amount').focus();
+		$('.customize_email').focus();
+});
+// Save email address if customer wants the USPS tracking number
+$( ".customize_email" ).on( "keyup change", function() {
+  $('#hidden_USPS_Tracking_Email').text($('.customize_email').val());
+});
+// Save total amount entered
+$( ".order-amount" ).on( "keyup change", function() {
+  $('#hidden_Total_Amount').text($('.order-amount').val());
+});
+// make sure we got everything updated just before the click on the PayPal buttons:
+$( "#select_book, #select_chapter, #select_verse, .customize_name, .images_inside_modal_customize_picture_flowers, .images_inside_modal_customize_picture_scenery, .customize_email, .order-amount" ).on( "keyup change click", function() {
+
+// grab the hidden text divs and combine them into the complete order details
+var customerName = $("#hidden_name_desired").text();
+console.log('customerName is: ' + customerName);
+
+var customerVerse = ($('#hidden_book_desired').text() + '-' + $('#hidden_chapter_desired').text() + '-' + $('#hidden_verse_desired').text());
+console.log('customerVerse is: ' + customerVerse);
+
+var customerPicture = $("#hidden_picture_desired").text();
+console.log('customerPicture is: ' + customerPicture);
+
+var customerBackground = $("#hidden_background_desired").text();
+console.log('customerBackground is: ' + customerBackground);
+
+var customerEmail = $("#hidden_USPS_Tracking_Email").text();
+console.log('customerEmail is: ' + customerEmail);
+
+var customerTotalAmount = $("#hidden_Total_Amount").text();
+console.log('customerTotalAmount is: ' + customerTotalAmount);
+
+var completeDescription = customerVerse + " | Name: " + customerName + " | Picture: " + customerPicture + " | Email: " + customerEmail + " | Amount: $" + customerTotalAmount;
+console.log('completeDescription is: ' + completeDescription);
+
+  $('#hidden_Complete_Description').text(completeDescription);
+  $('#description').val(completeDescription);
 });
   // ////////////////////////// -->
   // END STEP 6 - PLACE THE ORDER -->
@@ -1855,79 +1827,7 @@ $(function(){
 /* *************************** */
 /* *************************** */
 /* *************************** */
-      ////////////////////////////////////////////////////
-      // BEGIN PureChat hack
-      ////////////////////////////////////////////////////
-      // initial hide
-      var stopWaitingForPurechat = setInterval(function() {
-        if ($("body").find('.purechat-widget-title-link:contains("Contact us")').length > 0) {
-          console.log("found PureChat");
-          // hide it
-          $("#PureChatWidget").attr("style", "z-index: -1 !important");
-          clearInterval(stopWaitingForPurechat);
-        }
-      }, 1000);
-      ////////////////////
-      // show when needed
-      $(".open_purechat").on("click", function() {
-        // show it
-        $("#PureChatWidget").attr("style", "z-index: 2147483646 !important");
-        // hack colors
-        // header
-        $("#PureChatWidget").find(".purechat-widget-header").attr("style", "background-color: #0c1400 !important");
-        // content-wrapper
-        $("#PureChatWidget").find(".purechat-content-wrapper").attr("style", "background-color: #172800 !important");
-        // purechat-card
-        $("#PureChatWidget").find(".purechat-card").attr("style", "background-color: #203700 !important");
-        // purechat-btn
-        $("#PureChatWidget").find(".purechat-btn").attr("style", "color: #d5ad6d !important");
-        // purechat-widget-title-link
-        $("#PureChatWidget").find(".purechat-widget-title-link").attr("style", "font-size: 20px !important;padding-left: 8px !important;font-family: OpenSansCondensed-Light !important;color: #d5ad6d !important;text-shadow: 2px 2px 1px black !important");
-        // keep widget expanded
-        $("#PureChatWidget").removeClass("purechat-widget-super-collapsed");
-        $("#PureChatWidget").addClass("purechat-widget-collapsed");
-        console.log("PureChat will keep widget expanded");
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 10px #d5ad6d !important");
-        }, 1000);
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 50px #d5ad6d !important");
-        }, 1500);
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 10px #d5ad6d !important");
-        }, 2000);
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 50px #d5ad6d !important");
-        }, 2500);
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 10px #d5ad6d !important");
-        }, 3000);
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 50px #d5ad6d !important");
-        }, 3500);
-        setTimeout(function() {
-          $("body").find("#PureChatWidget.purechat.purechat-widget-collapsed").attr("style", "box-shadow: 0px 0px 10px #d5ad6d !important");
-        }, 4000);
-        // darken the page to emphasize chat
-        $(".opacity_cover").show();
-      });
-      // hide when click outside
-      $(".opacity_cover, .wrap_gofundme_modal_bar").click(function() {
-        // hide it
-        $("#PureChatWidget").attr("style", "z-index: -1 !important");
-        // bring back to normal
-        $(".opacity_cover").hide();
-        // hide the menu
-        $(".menu_modal").hide("slow");
-      });
-      // stopPropagation when clicking to show the widget and inside the widget itself
-      $(".open_purechat, #PureChatWidget").click(function(event) {
-        event.stopPropagation();
-        console.log("PureChat hide when click outside event.stopPropagation");
-      });
-      ////////////////////////////////////////////////////
-      // END PureChat hack
-      ////////////////////////////////////////////////////
+
       ////////////////////////////////////////////////////
       // BEGIN simple menu
       ////////////////////////////////////////////////////
@@ -1953,36 +1853,6 @@ $("#menu").on("click", function() {
 
 
 
-    ////////////////////////////////////////////////////
-    // BEGIN PureChat load
-    ////////////////////////////////////////////////////
-    window.purechatApi = {
-      l: [],
-      t: [],
-      on: function() {
-        this.l.push(arguments);
-      }
-    };
-    (function() {
-      var done = false;
-      var script = document.createElement('script');
-      script.async = true;
-      script.type = 'text/javascript';
-      script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';
-      document.getElementsByTagName('HEAD').item(0).appendChild(script);
-      script.onreadystatechange = script.onload = function(e) {
-        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
-          var w = new PCWidget({
-            c: '7f1570e3-a978-430a-82a3-fccff55a8707',
-            f: true
-          });
-          done = true;
-        }
-      };
-    })();
-    ////////////////////////////////////////////////////
-    // END PureChat load
-    ////////////////////////////////////////////////////
 /* *************************** */
 /* *************************** */
 /* *************************** */
@@ -1990,74 +1860,6 @@ $("#menu").on("click", function() {
 /* *************************** */
 /* *************************** */
 /* *************************** */
-
-////////////////////////////////////////////////////
-// BEGIN addthis hack follow area
-////////////////////////////////////////////////////
-  var stopWhenCompleted_addthis_is_loaded = setInterval(function() {
-    if (
-      $(".wrap_addthis_follow").find(
-        '.at-icon-messenger title:contains("Messenger")'
-      ).length > 0
-    ) {
-      console.log("stopWhenCompleted_addthis_is_loaded Let's hack @ 1000");
-      // addthis shadow hack to SHARING AND FOLLOW
-      setTimeout(function() {
-        $(".wrap_addthis_follow")
-          .find(".at-icon-wrapper")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
-          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
-        console.log("/////// applied addthis shadow SHARING hack @ + 1000");
-      }, 1000);
-      // addthis FOLLOW margin hack
-      setTimeout(function() {
-        $(".wrap_addthis_follow")
-          .find(".addthis_toolbox a")
-          .css("margin-left", "6px")
-          .css("margin-right", "6px");
-        $(".wrap_addthis_follow")
-          .find("p")
-          .css("margin-top", "-8px");
-        console.log("/////// applied addthis margin FOLLOW hack @ + 2000");
-      }, 2000);
-      // addthis FOLLOW flex hack
-      setTimeout(function() {
-        $(".wrap_addthis_follow")
-          .find(".addthis_toolbox")
-          .css("display", "flex")
-          .css("flex-direction", "row")
-          .css("flex-wrap", "wrap")
-          .css("align-content", "center")
-          .css("justify-content", "center")
-          .css("align-items", "center")
-        console.log("/////// applied addthis flex FOLLOW hack @ + 2500");
-      }, 2500);
-      // addthis FOLLOW size hack
-      setTimeout(function() {
-        $(".wrap_addthis_follow")
-          .find(".at-icon-wrapper, svg.at-icon")
-          .css("width", "44px")
-          .css("height", "44px")
-          .css("line-height", "44px");
-        console.log("/////// applied addthis size FOLLOW hack @ + 3000");
-      }, 3000);
-      // addthis FOLLOW shadow hack
-      setTimeout(function() {
-        $(".wrap_addthis_follow")
-          .find("svg")
-          .css("-webkit-filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))")
-          .css("filter", "drop-shadow( 3px 3px 2px rgba(0, 0, 0, 3.8))");
-        console.log("/////// applied addthis shadow FOLLOW hack @ + 3500");
-      }, 3500);
-
-      clearInterval(stopWhenCompleted_addthis_is_loaded);
-    }
-  }, 13000);
-////////////////////////////////////////////////////
-// END addthis hack follow area
-////////////////////////////////////////////////////
-
-
 
 
 
