@@ -334,6 +334,7 @@ if (($('#hidden_book_desired').text() != 'select') && ($('#hidden_chapter_desire
 $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
 var step1_next_step2TimeoutID = setTimeout(function() {
 $(".step1_next_step2").css("background", "#292a00").show();
+$(".no_book_nor_chapter_nor_verse_selection_yet").hide();
   }, 1500);
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
@@ -524,7 +525,8 @@ $('.popup_ok_this_verse_selected').hide("slow");
 	///////////////////////////////////////////////////
 $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
 var step1_next_step2TimeoutID = setTimeout(function() {
-$(".step1_next_step2").css("background", "#292a00").show();
+  $(".step1_next_step2").css("background", "#292a00").show();
+  $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
   }, 1500);
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
@@ -750,7 +752,8 @@ $(".selected_verse").text(completeRefNeeded);
      $('.lets_choose').hide();
 $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
 var step1_next_step2TimeoutID = setTimeout(function() {
-$(".step1_next_step2").css("background", "#292a00").show();
+  $(".step1_next_step2").css("background", "#292a00").show();
+  $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
   }, 1500);
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();

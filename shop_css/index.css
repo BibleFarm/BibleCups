@@ -1509,7 +1509,7 @@ z-index: 2;
 /* END swiper thumnails loop lighter gradients
 /* ************* */
 .no_book_nor_chapter_nor_verse_selection_yet {
-display: ;
+display: none;
 }
 .step1_next_step2 {
 display: none;
