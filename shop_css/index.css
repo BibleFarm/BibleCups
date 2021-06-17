@@ -1405,7 +1405,8 @@ z-index: 2;
  {
 	position: fixed;
 	top: 70px;
-	left: 210px;
+  left: 219px;
+    color: #d5ad6d;
 }
 .wrap_swiper_container_biblical > .mySwiper_biblical > .swiper-button-prev,
 .wrap_swiper_container_flowers > .mySwiper_flowers > .swiper-button-prev,
@@ -1413,7 +1414,8 @@ z-index: 2;
 {
 	position: fixed;
 	top: 70px;
-	left: -57px;
+  left: -48px;
+    color: #d5ad6d;
 }
 
 
