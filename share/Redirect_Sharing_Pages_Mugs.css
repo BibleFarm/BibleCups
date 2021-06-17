@@ -459,6 +459,9 @@ font-size: 19px;
 	background: rgba(0, 0, 0, 0.9);
 	z-index: 111;
 }
+    .pinterest_pin_this_image {
+      display: none;
+    }
 
 
 /* END css for posting pages */ 

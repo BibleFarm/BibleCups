@@ -148,7 +148,12 @@ $(window).on("resize scroll", function () {
     const isBottom = scrollHeight - 200 < scrollPos;
     if (isBottom && currentscrollHeight < scrollHeight) {
 /////////////////////////////////////////////
-      getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
+getWelcome();
 /////////////////////////////////////////////
     //    currentscrollHeight = scrollHeight;
     }
@@ -348,7 +353,7 @@ var jqxhr = $.get( completeVerseURLtoGrab, function() {
 })
   .done(function(result) {
 var html = jQuery('<div>').html(result);
-var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '');
+var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '').replace(/\(\(.*?\)\)/g , '');
 console.log("Removed the italics and ref like this: " + removedItalicsAndRef);
 $('.populated_ref_with_ajax').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
   console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
@@ -540,7 +545,7 @@ var jqxhr = $.get( completeVerseURLtoGrab, function() {
 })
   .done(function(result) {
 var html = jQuery('<div>').html(result);
-var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '');
+var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '').replace(/\(\(.*?\)\)/g , '');
 console.log("Removed the italics and ref like this: " + removedItalicsAndRef);
 $('.populated_ref_with_ajax').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
   console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
@@ -767,7 +772,7 @@ var jqxhr = $.get( completeVerseURLtoGrab, function() {
 })
   .done(function(result) {
 var html = jQuery('<div>').html(result);
-var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '');
+var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '').replace(/\(\(.*?\)\)/g , '');
 console.log("Removed the italics and ref like this: " + removedItalicsAndRef);
 $('.populated_ref_with_ajax').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
   console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
@@ -1864,8 +1869,21 @@ $("#menu").on("click", function() {
 /* *************************** */
 /* *************************** */
 
+/* *************************** */
+// BEGIN let customer know the flower will be centered manually
+/* *************************** */
+$('.modal_review_the_order').append('<div class="we_will_move_the_picture_up_more_toward_the_middle">For example, we will move the picture up a little, so it will be centered in the middle</div>');
+/* *************************** */
+// END let customer know the flower will be centered manually
+/* *************************** */
 
-
+/* *************************** */
+// BEGIN let customer know they can only order one item at a time
+/* *************************** */
+$(".modal_review_the_order").append("<div class='we_are_working_on_a_full_feature_shopping_cart'>We're still working on a full feature shopping cart for multiple items. Please order one item at a time. Thank you for your patience.</div>");
+/* *************************** */
+// END let customer know they can only order one item at a time
+/* *************************** */
 
 
 

@@ -725,7 +725,7 @@ filter: drop-shadow(0px 0px 4px gray);
 	  overflow: auto;
     }
     .paypal_white_bg_css {
-      background: white;
+      background: none !important;
       color: rgb(44, 46, 47);
       text-shadow: none;
     }
@@ -1825,4 +1825,19 @@ font-weight: normal;
 }
 .help_icons_flex_item {
   padding: 8px;
+}
+.we_will_move_the_picture_up_more_toward_the_middle {
+  position: absolute;
+      display: block;
+      top: 118px;
+      width: 296px;
+      text-align: center;
+}
+.we_are_working_on_a_full_feature_shopping_cart {
+  position: absolute;
+      display: block;
+      top: 331px;
+      width: 296px;
+      text-align: center;
+      line-height: 23px;
 }
