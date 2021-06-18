@@ -1400,8 +1400,7 @@ z-index: 2;
 
 }
 .wrap_swiper_container_biblical > .mySwiper_biblical > .swiper-button-next,
-.wrap_swiper_container_flowers > .mySwiper_flowers > .swiper-button-next,
-.wrap_swiper_container_scenery > .mySwiper_scenery > .swiper-button-next
+.wrap_swiper_container_flowers > .mySwiper_flowers > .swiper-button-next
  {
 	position: fixed;
 	top: 70px;
@@ -1409,13 +1408,27 @@ z-index: 2;
     color: #d5ad6d;
 }
 .wrap_swiper_container_biblical > .mySwiper_biblical > .swiper-button-prev,
-.wrap_swiper_container_flowers > .mySwiper_flowers > .swiper-button-prev,
-.wrap_swiper_container_scenery > .mySwiper_scenery > .swiper-button-prev
+.wrap_swiper_container_flowers > .mySwiper_flowers > .swiper-button-prev
 {
 	position: fixed;
 	top: 70px;
   left: -48px;
     color: #d5ad6d;
+}
+
+.wrap_swiper_container_scenery > .mySwiper_scenery > .swiper-button-next
+ {
+	position: fixed;
+	top: 30px;
+  left: 210px;
+  color: #d5ad6d;
+}
+.wrap_swiper_container_scenery > .mySwiper_scenery > .swiper-button-prev
+{
+	position: fixed;
+	top: 30px;
+  left: -59px;
+  color: #d5ad6d;
 }
 
 
