@@ -980,11 +980,11 @@ if (($('#hidden_name_desired').text() != 'Your Name') && ($('#hidden_name_desire
   console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited');
 $('.continueToPictures').text('continue to pictures').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
 console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited also to reviewOrderCkeck');
-$('body').find('.reviewOrderCheck').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').text('review your order').css('color', '#d5ad6d');
+$('body').find('.reviewOrderCheck').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').text('review your design').css('color', '#d5ad6d');
 } else {
 $('.continueToPictures').text('type name up there').removeClass('nameHasBeenEdited').addClass('checkIfNameIsEdited').css('color', '#ff5757');
 console.log('Added class: checkIfNameIsEdited. Removed class: nameHasBeenEdited also to reviewOrderCkeck');
-$('body').find('.reviewOrderCheck').addClass('checkIfNameIsEdited').removeClass('nameHasBeenEdited').removeClass('reviewOrder').text('review your order').css('color', '#d5ad6d');
+$('body').find('.reviewOrderCheck').addClass('checkIfNameIsEdited').removeClass('nameHasBeenEdited').removeClass('reviewOrder').text('review your design').css('color', '#d5ad6d');
 }
 });
 // when click on continue to pictures
@@ -992,7 +992,7 @@ $( ".continueToPictures" ).on( "click", function(e) {
   // checkIfNameIsEdited to enable continue to pictures
   if (($('#hidden_name_desired').text() != 'Your Name') && ($('#hidden_name_desired').text() != '') && ($('#hidden_name_desired').text() != ' ')) {
     console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited. Continuing to pictures.');
-  $('.reviewOrderCheck').text('review your order').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
+  $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
   $('.modal_customize_name').hide();
   $('.modal_customize_picture').show('slow');
   // when user returns to this modal, just in case they already have a picture selected
@@ -1027,7 +1027,7 @@ $("form.name_input").submit(function(e) {
 
   if (($('#hidden_name_desired').text() != 'Your Name') && ($('#hidden_name_desired').text() != '') && ($('#hidden_name_desired').text() != ' ')) {
     console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited. Continuing to pictures.');
-  $('.reviewOrderCheck').text('review your order').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
+  $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
   $('.modal_customize_name').hide();
   $('.modal_customize_picture').show('slow');
   // when user returns to this modal, just in case they already have a picture selected
@@ -1134,6 +1134,8 @@ $( "#view-biblical, #view-flowers, #view-scenery" ).on( "click", function() {
 });
 // make this clicked picture the selected one and show it in the other modals
 $( "img.images_inside_modal_customize_picture_biblical, img.images_inside_modal_customize_picture_flowers, img.images_inside_modal_customize_picture_scenery" ).on( "click", function() {
+  $('.you_need_to_click_on_a_picture').hide();
+  $('.reviewOrderCheck').css('color', '#d5ad6d').text('review your design');
   $('.popup_ok_this_picture_selected').show('slow');
   setTimeout(function() {
     $('.popup_ok_this_picture_selected').hide();
@@ -1885,7 +1887,22 @@ $(".modal_review_the_order").append("<div class='we_are_working_on_a_full_featur
 // END let customer know they can only order one item at a time
 /* *************************** */
 
+// BEGIN upon arrival, if no scripture is recorded
+$(".CreateYourOwnDesign").on("click", function () {
+if (($('#hidden_book_desired').text() == 'select') || ($('#hidden_chapter_desired').text() == '0') || ($('#hidden_verse_desired').text() == '0')) {
+$(".no_book_nor_chapter_nor_verse_selection_yet").show();
+}
+});
+// END upon arrival, if no scripture is recorded
 
+// BEGIN if no picture is selected
+$(".reviewOrderCheck").on("click", function () {
+if (!$(this).hasClass('pictureHasBeenSelected')) {
+$(this).css('color', 'rgb(255, 87, 87)').text('no picture selected yet');
+$('.you_need_to_click_on_a_picture').show();
+}
+});
+// END if no picture is selected
 
 /* END Document Ready ****** */
 });
