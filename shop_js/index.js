@@ -1381,11 +1381,13 @@ $('.selected_verse').show();
 $('body').find('.addYourName').on( "click", function() {
 $(".menu_modal, .modal_customize_verse, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order").hide();
 $('.modal_customize_name').show();
+if ($('#hidden_name_desired').text() == 'Your Name') {
 $('#customize_name').val('');
 $('.sample_name').text('Your Name').show();
 $('.rendered_customerName_in_modalName').html('');
 $('.rendered_customerName_in_modalPictures').html('');
 $('.rendered_customerName_in_modalReviewOrder').html('');
+}
 $('.customize_name').focus();
 });
 $('body').find('.changePicture').on( "click", function() {
@@ -1895,6 +1897,9 @@ $(".modal_review_the_order").append("<div class='we_are_working_on_a_full_featur
 // BEGIN upon arrival, if no scripture is recorded
 $(".CreateYourOwnDesign").on("click", function () {
 if (($('#hidden_book_desired').text() == 'select') || ($('#hidden_chapter_desired').text() == '0') || ($('#hidden_verse_desired').text() == '0')) {
+  $('#select_book').prop('selectedIndex',0);
+  $('#select_chapter').prop('selectedIndex',0);
+  $('#select_verse').prop('selectedIndex',0);
 $(".no_book_nor_chapter_nor_verse_selection_yet").show();
 }
 });
