@@ -542,10 +542,11 @@ box-shadow: 0;
 .orderFlowNoFinger {
 display: block;
 text-align: center;
-line-height: 22px;
+line-height: 21px;
 background: #222222;
 padding-top: 2px;
 padding-bottom: 4px;
+font-size: 19px;
 }
 .orderFlowFinger {
 display: block;
@@ -1861,6 +1862,8 @@ font-weight: normal;
       top: 118px;
       width: 296px;
       text-align: center;
+      line-height: 21px;
+      font-size: 19px;
 }
 .we_are_working_on_a_full_feature_shopping_cart {
   position: absolute;
@@ -1868,6 +1871,6 @@ font-weight: normal;
       top: 331px;
       width: 296px;
       text-align: center;
-      line-height: 23px;
+      line-height: 21px;
       font-size: 19px;
 }
