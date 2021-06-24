@@ -608,7 +608,7 @@ $(".no_book_nor_chapter_nor_verse_selection_yet").hide();
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
 var willGrabVerse = $('#hidden_verse_desired').text();
-var completeVerseURLtoGrab = ('http://127.0.0.1:3000/data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
+var completeVerseURLtoGrab = ('../../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
 console.log("completeVerseURLtoGrab is: " + completeVerseURLtoGrab);
 // Assign handlers immediately after making the request,
 // and remember the jqxhr object for this request
@@ -800,7 +800,7 @@ var step1_next_step2TimeoutID = setTimeout(function() {
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
 var willGrabVerse = $('#hidden_verse_desired').text();
-var completeVerseURLtoGrab = ('http://127.0.0.1:3000/data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
+var completeVerseURLtoGrab = ('../../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
 console.log("completeVerseURLtoGrab is: " + completeVerseURLtoGrab);
 // Assign handlers immediately after making the request,
 // and remember the jqxhr object for this request
@@ -1027,7 +1027,7 @@ var step1_next_step2TimeoutID = setTimeout(function() {
 var willGrabBook = $('#hidden_book_desired').text();
 var willGrabChapter = $('#hidden_chapter_desired').text();
 var willGrabVerse = $('#hidden_verse_desired').text();
-var completeVerseURLtoGrab = ('http://127.0.0.1:3000/data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
+var completeVerseURLtoGrab = ('../../data_files/_YourNameHere_/' + willGrabBook + '/' + willGrabBook + '-' + willGrabChapter + '-' + willGrabVerse + '.html');
 console.log("completeVerseURLtoGrab is: " + completeVerseURLtoGrab);
 // Assign handlers immediately after making the request,
 // and remember the jqxhr object for this request
