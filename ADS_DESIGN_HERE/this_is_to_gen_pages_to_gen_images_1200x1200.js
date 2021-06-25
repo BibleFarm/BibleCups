@@ -386,10 +386,10 @@ var order_id = $('#order_id').val();
 
 
 // fill the input that will contain the content of the js file to create
-$('#order_id').on('keyup', function() {
-var idNeeded = $(this).val();
+$('#grab_DOM_and_populate_node_js_File_Content').on('click', function() {
+var idNeeded = $('#order_id').val();
 $('#fname').val(idNeeded);
-$('#fcontent').val("var fs = require('fs');var htmlContent = '<html>Whatever</html>';fs.writeFile('/my-page.html', htmlContent, (error) => { /* handle error */ });const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
+$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
 });
 
 

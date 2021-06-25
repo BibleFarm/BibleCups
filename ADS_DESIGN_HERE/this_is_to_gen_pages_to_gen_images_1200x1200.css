@@ -811,116 +811,101 @@ display: block;
 top: 1205px;
 left: 0px;
 min-width: 1000px;
-min-height 400px;
-font-size: 100px;
+font-size: 80px;
 background: ;
 }
 .DesignCustomerOrdersUI_imput_ORDER {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_imput_NAME {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_imput_FLOWER {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_select_moveFlowerUpDown {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_select_increaseFontSize {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_select_decreaseLineHeight {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_select_moveRefSideways {
   min-width: 1000px;
-  min-height 400px;
-  line-height: 100px;
-  font-size: 100px;
+  line-height: 80px;
+  font-size: 80px;
 }
 .DesignCustomerOrdersUI_imput_VERSE {
   display: none;
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .select_book {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 display: inline-block;
 }
 .select_chapter {
 min-width: 500px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 display: inline-block;
 }
 .select_verse {
 min-width: 500px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 display: inline-block;
 }
 .DesignCustomerOrdersUI_imput_REF {
   display: none;
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_imput_BG {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_button {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_imput_JS_file_name {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .DesignCustomerOrdersUI_textarea_JS_file_content {
-min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+width: 3600px;
+height: 1000px;
+font-family: sans-serif;
+font-size: 60px;
+overflow: auto;
+background: lightgray;
 }
 button#create {
 min-width: 1000px;
-min-height 400px;
-line-height: 100px;
-font-size: 100px;
+line-height: 80px;
+font-size: 80px;
 }
 .wrap_downloadable_image {
 position: fixed;
