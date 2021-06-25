@@ -386,10 +386,59 @@ var order_id = $('#order_id').val();
 
 
 // fill the input that will contain the content of the js file to create
-$('#grab_DOM_and_populate_node_js_File_Content').on('click', function() {
+$('#populate_node_js_File_Content_with_all_10_ads').on('click', function() {
 var idNeeded = $('#order_id').val();
 $('#fname').val(idNeeded);
-$('#fcontent').val("const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + idNeeded + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + idNeeded + ".png' }); await browser.close(); })();");
+// node JS File to run the 10 Ad images for this verse
+var commentFileTitle = "// node JS File to run the 10 Ad images for this verse\n\n";
+// var to populate initial for Autofill node JS File Content
+var initialRequireFileSystem = "const fsPromises = require('fs').promises;\n\n";
+// common variables for all ads
+var beforeHtmlFileName = "fsPromises.writeFile('";
+var afterHtmlFileName = ".html', '<html>";
+// Ad 01 BEGIN
+// Targeting Women with: so I asked him... What's your favourite verse?
+// So, let's modify the DOM for Ad 01
+var DOM_modified_for_Ad_01 = $('html').html()
+.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+.replace("Who Name", "His Name")
+.replace("so I asked who", "so I asked him")
+.replace("What's your favorite verse?", "What's your favorite verse?")
+.replace("Add who Name", "Add his Name")
+.replace(/\'/g, "\\\'");
+// now proceed to build the code
+var commentBeginAd_01 = "// BEGIN Ad 01\n";
+var commentEndAd_01 = "\n// END Ad 01\n\n";
+var HtmlFileName_01 = "Targeting-W-Ad-01_" + $('#order_id').val();
+var lets_add_the_rest_for_Ad_01 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_01 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_01 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_01 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_01 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+var finishedWithAd_01 = (commentBeginAd_01 + beforeHtmlFileName + HtmlFileName_01 + afterHtmlFileName + DOM_modified_for_Ad_01 + lets_add_the_rest_for_Ad_01 + commentEndAd_01).replace("</script>\n", "</script>");
+// Ad 01 END
+// Ad 02 BEGIN
+// Targeting Women with: I'd like him to... believe this verse every day
+// So, let's modify the DOM for Ad 02
+var DOM_modified_for_Ad_02 = $('html').html()
+.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+.replace("Who Name", "His Name")
+.replace("so I asked who", "I'd like him to")
+.replace("What's your favorite verse?", "believe this verse every day")
+.replace("Add who Name", "Add his Name")
+.replace(/\'/g, "\\\'");
+// now proceed to build the code
+var commentBeginAd_02 = "// BEGIN Ad 02\n";
+var commentEndAd_02 = "\n// END Ad 02\n\n";
+var HtmlFileName_02 = "Targeting-W-Ad-02_" + $('#order_id').val();
+var lets_add_the_rest_for_Ad_02 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_02 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_02 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_02 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_02 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+var finishedWithAd_02 = (commentBeginAd_02 + beforeHtmlFileName + HtmlFileName_02 + afterHtmlFileName + DOM_modified_for_Ad_02 + lets_add_the_rest_for_Ad_02 + commentEndAd_02).replace("</script>\n", "</script>");
+// Ad 02 END
+
+
+// fill textarea with complete code to render all ads
+$('#fcontent').val(
+commentFileTitle +
+initialRequireFileSystem +
+finishedWithAd_01 +
+finishedWithAd_02
+);
 });
 
 
