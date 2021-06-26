@@ -402,8 +402,8 @@ var afterHtmlFileName = ".html', '<html>";
 var DOM_modified_for_Ad_01 = $('html').html()
 .replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
 .replace("Who Name", "His Name")
-.replace("ad_big_message_1", "so I asked him")
-.replace("ad_big_message_2", "What's your favorite verse?")
+.replace("s_ad_big_message_1", "so I asked him")
+.replace("s_ad_big_message_2", "What's your favorite verse?")
 .replace("Add who Name", "Add his Name")
 .replace(/\'/g, "\\\'");
 // change font size for Ad 01
@@ -421,8 +421,8 @@ var finishedWithAd_01 = (commentBeginAd_01 + beforeHtmlFileName + HtmlFileName_0
 var DOM_modified_for_Ad_02 = $('html').html()
 .replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
 .replace("Who Name", "His Name")
-.replace("ad_big_message_1", "I'd like him to")
-.replace("ad_big_message_2", "believe this verse every day")
+.replace("s_ad_big_message_1", "I'd like him to")
+.replace("s_ad_big_message_2", "believe this verse every day")
 .replace("Add who Name", "Add his Name")
 .replace(/\'/g, "\\\'");
 // change font size for Ad 02
