@@ -67,7 +67,8 @@ this.css('textShadow',rules.join());
 $(function(){
     $('.red').textStroke(1,'black');
     $('.shop > span').textStroke(4,'black');
-    $('.ad_intro, .ad_description, .ad_big_message_1, .ad_big_message_2, .ad_big_message_3, .shop').textStroke(4,'black');
+		$('.ad_intro, .ad_description, .ad_big_message_2, .ad_big_message_3, .shop').textStroke(4,'black');
+		$('.ad_big_message_1').textStroke(5,'black');
 })
 // END textStroke
 
@@ -405,9 +406,8 @@ var DOM_modified_for_Ad_01 = $('html').html()
 .replace("s_ad_big_message_1", "so I asked him")
 .replace("s_ad_big_message_2", "What's your favorite verse?")
 .replace("Add who Name", "Add his Name")
-.replace(/\'/g, "\\\'");
-// change font size for Ad 01
-$(".ad_big_message_1").attr("style", "text-shadow: black 4px 0px 0px, black 3.8637px 1.03528px 0px, black 3.4641px 2px 0px, black 2.82843px 2.82843px 0px, black 2px 3.4641px 0px, black 1.03528px 3.8637px 0px, black 0px 4px 0px, black -1.03528px 3.8637px 0px, black -2px 3.4641px 0px, black -2.82843px 2.82843px 0px, black -3.4641px 2px 0px, black -3.8637px 1.03528px 0px, black -4px 0px 0px, black -3.8637px -1.03528px 0px, black -3.4641px -2px 0px, black -2.82843px -2.82843px 0px, black -2px -3.4641px 0px, black -1.03528px -3.8637px 0px, black 0px -4px 0px, black 1.03528px -3.8637px 0px, black 2px -3.4641px 0px, black 2.82843px -2.82843px 0px, black 3.4641px -2px 0px, black 3.8637px -1.03528px 0px, black 4px 0px 0px; font-size: 500px !important;");
+.replace(/\'/g, "\\\'")
+.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; 500px !important;");
 // now proceed to build the code
 var commentBeginAd_01 = "// BEGIN Ad 01\n";
 var commentEndAd_01 = "\n// END Ad 01\n\n";
@@ -424,9 +424,8 @@ var DOM_modified_for_Ad_02 = $('html').html()
 .replace("s_ad_big_message_1", "I'd like him to")
 .replace("s_ad_big_message_2", "believe this verse every day")
 .replace("Add who Name", "Add his Name")
-.replace(/\'/g, "\\\'");
-// change font size for Ad 02
-$(".ad_big_message_1").attr("style", "text-shadow: black 4px 0px 0px, black 3.8637px 1.03528px 0px, black 3.4641px 2px 0px, black 2.82843px 2.82843px 0px, black 2px 3.4641px 0px, black 1.03528px 3.8637px 0px, black 0px 4px 0px, black -1.03528px 3.8637px 0px, black -2px 3.4641px 0px, black -2.82843px 2.82843px 0px, black -3.4641px 2px 0px, black -3.8637px 1.03528px 0px, black -4px 0px 0px, black -3.8637px -1.03528px 0px, black -3.4641px -2px 0px, black -2.82843px -2.82843px 0px, black -2px -3.4641px 0px, black -1.03528px -3.8637px 0px, black 0px -4px 0px, black 1.03528px -3.8637px 0px, black 2px -3.4641px 0px, black 2.82843px -2.82843px 0px, black 3.4641px -2px 0px, black 3.8637px -1.03528px 0px, black 4px 0px 0px; font-size: 50px !important;");
+.replace(/\'/g, "\\\'")
+.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; 50px !important;");
 // now proceed to build the code
 var commentBeginAd_02 = "// BEGIN Ad 02\n";
 var commentEndAd_02 = "\n// END Ad 02\n\n";
