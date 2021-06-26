@@ -46,7 +46,7 @@ position: fixed;
 }
 .blank_mug {
 	position: absolute;
-	top: 52px;
+	top: 332px;
 }
 .dupe_blank_mug {
 	position: absolute;
@@ -84,7 +84,7 @@ width: 250px;
 .bot_left {
 position: absolute;
     left: 614px;
-    top: 556px;
+    top: 836px;
     display: table-cell;
     width: 411px;
     /* max-width: 200px; */
@@ -130,7 +130,7 @@ width: 190px;
 position: fixed;
     display: flex;
     left: 642px;
-    top: 162px;
+    top: 442px;
     width: 356px;
     height: 400px;
     text-align: center;
@@ -247,7 +247,7 @@ height: 214px;
 .bot_center {
 position: absolute;
     left: 172px;
-    top: 556px;
+    top: 836px;
     display: table-cell;
     width: 411px;
     /* max-width: 200px; */
@@ -328,7 +328,7 @@ position: absolute;
 position: absolute;
     display: flex;
     left: 184px;
-    top: 150px;
+    top: 430px;
     width: 380px;
     height: 150px;
     text-align: center;
@@ -510,7 +510,7 @@ img.dupe_container_showing_selected_picture_little_Left {
 .customCSSforFlowers_flex_little_Left {
 position: fixed;
     display: flex;
-    top: 278px;
+    top: 558px;
     left: 207px;
     width: 340px;
     height: 264px;
@@ -605,7 +605,7 @@ position: fixed;
 .ad_big_message_1 {
 position: fixed;
     display: block;
-    top: 694px;
+    top: 144px;
     left: 0;
     width: 1200px;
     height: 60px;
@@ -618,7 +618,7 @@ position: fixed;
 .ad_big_message_2 {
 position: fixed;
     display: block;
-    top: 822px;
+    top: 279px;
     left: 0;
     width: 1200px;
     height: 60px;
@@ -638,7 +638,7 @@ position: fixed;
     line-height: 60px;
     text-align: center;
     font-family: "PT_Sans-Narrow-Web-Regular";
-    font-size: 87px;
+    font-size: 88px;
     color: #d5ad6d;
 }
 .ad_description {

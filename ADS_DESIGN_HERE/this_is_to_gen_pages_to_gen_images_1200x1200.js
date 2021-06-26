@@ -402,10 +402,12 @@ var afterHtmlFileName = ".html', '<html>";
 var DOM_modified_for_Ad_01 = $('html').html()
 .replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
 .replace("Who Name", "His Name")
-.replace("so I asked who", "so I asked him")
-.replace("What's your favorite verse?", "What's your favorite verse?")
+.replace("ad_big_message_1", "so I asked him")
+.replace("ad_big_message_2", "What's your favorite verse?")
 .replace("Add who Name", "Add his Name")
 .replace(/\'/g, "\\\'");
+// change font size for Ad 01
+$(".ad_big_message_1").css("font-size", "20px");
 // now proceed to build the code
 var commentBeginAd_01 = "// BEGIN Ad 01\n";
 var commentEndAd_01 = "\n// END Ad 01\n\n";
@@ -419,10 +421,12 @@ var finishedWithAd_01 = (commentBeginAd_01 + beforeHtmlFileName + HtmlFileName_0
 var DOM_modified_for_Ad_02 = $('html').html()
 .replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
 .replace("Who Name", "His Name")
-.replace("so I asked who", "I'd like him to")
-.replace("What's your favorite verse?", "believe this verse every day")
+.replace("ad_big_message_1", "I'd like him to")
+.replace("ad_big_message_2", "believe this verse every day")
 .replace("Add who Name", "Add his Name")
 .replace(/\'/g, "\\\'");
+// change font size for Ad 02
+$(".ad_big_message_1").css("font-size", "100px");
 // now proceed to build the code
 var commentBeginAd_02 = "// BEGIN Ad 02\n";
 var commentEndAd_02 = "\n// END Ad 02\n\n";
