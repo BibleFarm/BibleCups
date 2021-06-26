@@ -407,7 +407,7 @@ var DOM_modified_for_Ad_01 = $('html').html()
 .replace("Add who Name", "Add his Name")
 .replace(/\'/g, "\\\'");
 // change font size for Ad 01
-$(".ad_big_message_1").css("font-size", "20px");
+$(".ad_big_message_1").attr("style", "text-shadow: black 4px 0px 0px, black 3.8637px 1.03528px 0px, black 3.4641px 2px 0px, black 2.82843px 2.82843px 0px, black 2px 3.4641px 0px, black 1.03528px 3.8637px 0px, black 0px 4px 0px, black -1.03528px 3.8637px 0px, black -2px 3.4641px 0px, black -2.82843px 2.82843px 0px, black -3.4641px 2px 0px, black -3.8637px 1.03528px 0px, black -4px 0px 0px, black -3.8637px -1.03528px 0px, black -3.4641px -2px 0px, black -2.82843px -2.82843px 0px, black -2px -3.4641px 0px, black -1.03528px -3.8637px 0px, black 0px -4px 0px, black 1.03528px -3.8637px 0px, black 2px -3.4641px 0px, black 2.82843px -2.82843px 0px, black 3.4641px -2px 0px, black 3.8637px -1.03528px 0px, black 4px 0px 0px; font-size: 500px !important;");
 // now proceed to build the code
 var commentBeginAd_01 = "// BEGIN Ad 01\n";
 var commentEndAd_01 = "\n// END Ad 01\n\n";
@@ -426,7 +426,7 @@ var DOM_modified_for_Ad_02 = $('html').html()
 .replace("Add who Name", "Add his Name")
 .replace(/\'/g, "\\\'");
 // change font size for Ad 02
-$(".ad_big_message_1").css("font-size", "100px");
+$(".ad_big_message_1").attr("style", "text-shadow: black 4px 0px 0px, black 3.8637px 1.03528px 0px, black 3.4641px 2px 0px, black 2.82843px 2.82843px 0px, black 2px 3.4641px 0px, black 1.03528px 3.8637px 0px, black 0px 4px 0px, black -1.03528px 3.8637px 0px, black -2px 3.4641px 0px, black -2.82843px 2.82843px 0px, black -3.4641px 2px 0px, black -3.8637px 1.03528px 0px, black -4px 0px 0px, black -3.8637px -1.03528px 0px, black -3.4641px -2px 0px, black -2.82843px -2.82843px 0px, black -2px -3.4641px 0px, black -1.03528px -3.8637px 0px, black 0px -4px 0px, black 1.03528px -3.8637px 0px, black 2px -3.4641px 0px, black 2.82843px -2.82843px 0px, black 3.4641px -2px 0px, black 3.8637px -1.03528px 0px, black 4px 0px 0px; font-size: 50px !important;");
 // now proceed to build the code
 var commentBeginAd_02 = "// BEGIN Ad 02\n";
 var commentEndAd_02 = "\n// END Ad 02\n\n";
