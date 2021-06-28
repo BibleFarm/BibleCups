@@ -460,7 +460,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_03 = "// BEGIN AD_03\n";
 		var commentEndAD_03 = "\n// END AD_03\n\n";
@@ -479,7 +481,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_04 = "// BEGIN AD_04\n";
 		var commentEndAD_04 = "\n// END AD_04\n\n";
@@ -498,7 +502,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_05 = "// BEGIN AD_05\n";
 		var commentEndAD_05 = "\n// END AD_05\n\n";
@@ -517,7 +523,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add her Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_06 = "// BEGIN AD_06\n";
 		var commentEndAD_06 = "\n// END AD_06\n\n";
@@ -536,7 +544,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add her Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_07 = "// BEGIN AD_07\n";
 		var commentEndAD_07 = "\n// END AD_07\n\n";
@@ -720,7 +730,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-081.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_13 = "// BEGIN AD_13\n";
 		var commentEndAD_13 = "\n// END AD_13\n\n";
@@ -740,7 +751,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-081.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_14 = "// BEGIN AD_14\n";
 		var commentEndAD_14 = "\n// END AD_14\n\n";
@@ -760,7 +772,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-081.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_15 = "// BEGIN AD_15\n";
 		var commentEndAD_15 = "\n// END AD_15\n\n";
@@ -780,7 +793,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-081.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_16 = "// BEGIN AD_16\n";
 		var commentEndAD_16 = "\n// END AD_16\n\n";
@@ -800,7 +814,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-081.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_17 = "// BEGIN AD_17\n";
 		var commentEndAD_17 = "\n// END AD_17\n\n";
@@ -984,7 +999,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-139.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_23 = "// BEGIN AD_23\n";
 		var commentEndAD_23 = "\n// END AD_23\n\n";
@@ -1004,7 +1020,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-139.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_24 = "// BEGIN AD_24\n";
 		var commentEndAD_24 = "\n// END AD_24\n\n";
@@ -1024,7 +1041,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-139.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_25 = "// BEGIN AD_25\n";
 		var commentEndAD_25 = "\n// END AD_25\n\n";
@@ -1044,7 +1062,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-139.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_26 = "// BEGIN AD_26\n";
 		var commentEndAD_26 = "\n// END AD_26\n\n";
@@ -1064,7 +1083,8 @@ var order_id = $('#order_id').val();
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
 		.replace('p-original-size/S-001.png', 'p-original-size/F-139.png')
-		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforFlowers_item_little_Left" style="top: 560px;">');
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_27 = "// BEGIN AD_27\n";
 		var commentEndAD_27 = "\n// END AD_27\n\n";
@@ -1247,7 +1267,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_33 = "// BEGIN AD_33\n";
 		var commentEndAD_33 = "\n// END AD_33\n\n";
@@ -1266,7 +1288,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_34 = "// BEGIN AD_34\n";
 		var commentEndAD_34 = "\n// END AD_34\n\n";
@@ -1285,7 +1309,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_35 = "// BEGIN AD_35\n";
 		var commentEndAD_35 = "\n// END AD_35\n\n";
@@ -1304,7 +1330,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add her Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_36 = "// BEGIN AD_36\n";
 		var commentEndAD_36 = "\n// END AD_36\n\n";
@@ -1323,7 +1351,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add her Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-141.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_37 = "// BEGIN AD_37\n";
 		var commentEndAD_37 = "\n// END AD_37\n\n";
@@ -1506,7 +1536,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_43 = "// BEGIN AD_43\n";
 		var commentEndAD_43 = "\n// END AD_43\n\n";
@@ -1525,7 +1557,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_44 = "// BEGIN AD_44\n";
 		var commentEndAD_44 = "\n// END AD_44\n\n";
@@ -1544,7 +1578,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add my Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_45 = "// BEGIN AD_45\n";
 		var commentEndAD_45 = "\n// END AD_45\n\n";
@@ -1563,7 +1599,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add her Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_46 = "// BEGIN AD_46\n";
 		var commentEndAD_46 = "\n// END AD_46\n\n";
@@ -1582,7 +1620,9 @@ var order_id = $('#order_id').val();
 		.replace("Add my Name", "Add her Name")
 		.replace(/\'/g, "\\\'")
 		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
-		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png');
+		.replace('p-original-size/S-001.png', 'p-original-size/F-142.png')
+		.replace('customCSSforScenery_flex_little_Left', 'customCSSforFlowers_flex_little_Left')
+		.replace('customCSSforScenery_item_little_Left', 'customCSSforFlowers_item_little_Left');
 		// now proceed to build the code
 		var commentBeginAD_47 = "// BEGIN AD_47\n";
 		var commentEndAD_47 = "\n// END AD_47\n\n";
