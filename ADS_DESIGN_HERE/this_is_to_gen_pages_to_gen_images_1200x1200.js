@@ -394,276 +394,277 @@ var order_id = $('#order_id').val();
         document.body.removeChild(a);
     });
 
-////////////////////////////////////
-// BEGIN node JS file 01-10 ///////
-////////////////////////////////////
-// fill the input that will contain the content of the js file to create
-$('#populate_01_10').on('click', function() {
-var idNeeded = $('#order_id').val();
-$('#fname_01_10').val(idNeeded + '_01_10');
-$('#fname_11_20').val(idNeeded + '_11_20');
-$('#fname_21_30').val(idNeeded + '_21_30');
-$('#fname_31_40').val(idNeeded + '_31_40');
-$('#fname_41_50').val(idNeeded + '_41_50');
-$('#fname_51_60').val(idNeeded + '_51_60');
-$('#fname_61_70').val(idNeeded + '_61_70');
-$('#fname_71_80').val(idNeeded + '_71_80');
-$('#fname_81_90').val(idNeeded + '_81_90');
-$('#fname_91_100').val(idNeeded + '_91_100');
-// node JS File to run the 10 Ad images for this verse
-var commentFileTitle = "// node JS File to run the 10 Ad images for this verse\n\n";
-// var to populate initial for Autofill node JS File Content
-var initialRequireFileSystem = "const fsPromises = require('fs').promises;\n\n";
-// common variables for all ads
-var beforeHtmlFileName = "fsPromises.writeFile('";
-var afterHtmlFileName = ".html', '<html>";
-// Ad 01 BEGIN
-// Targeting Women with: so I asked him... What's your favourite verse?
-// So, let's modify the DOM for Ad 01
-var DOM_modified_for_Ad_01 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "His Name")
-.replace("s_ad_big_message_1", "so I asked him")
-.replace("s_ad_big_message_2", "What's your favorite verse?")
-.replace("Add my Name", "Add his Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 230px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/S-115.png');
-// now proceed to build the code
-var commentBeginAd_01 = "// BEGIN Ad 01\n";
-var commentEndAd_01 = "\n// END Ad 01\n\n";
-var HtmlFileName_01 = $('#order_id').val() + "-AD-01-" + "S-115";
-var lets_add_the_rest_for_Ad_01 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_01 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_01 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_01 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_01 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_01 = (commentBeginAd_01 + beforeHtmlFileName + HtmlFileName_01 + afterHtmlFileName + DOM_modified_for_Ad_01 + lets_add_the_rest_for_Ad_01 + commentEndAd_01).replace("</script>\n", "</script>");
-// Ad 01 END
-// Ad 02 BEGIN
-// Targeting Women with: I'd like him to... believe this verse every day
-// So, let's modify the DOM for Ad 02
-var DOM_modified_for_Ad_02 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "His Name")
-.replace("s_ad_big_message_1", "I'd like him to")
-.replace("s_ad_big_message_2", "believe this verse every day")
-.replace("Add my Name", "Add his Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 245px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/S-115.png');
-// now proceed to build the code
-var commentBeginAd_02 = "// BEGIN Ad 02\n";
-var commentEndAd_02 = "\n// END Ad 02\n\n";
-var HtmlFileName_02 = $('#order_id').val() + "-AD-02-" + "S-115";
-var lets_add_the_rest_for_Ad_02 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_02 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_02 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_02 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_02 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_02 = (commentBeginAd_02 + beforeHtmlFileName + HtmlFileName_02 + afterHtmlFileName + DOM_modified_for_Ad_02 + lets_add_the_rest_for_Ad_02 + commentEndAd_02).replace("</script>\n", "</script>");
-// Ad 02 END
-// Ad 03 BEGIN
-// Targeting Women with: there's a verse... I want to keep in mind
-// So, let's modify the DOM for Ad 03
-var DOM_modified_for_Ad_03 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "My Name")
-.replace("s_ad_big_message_1", "there's a verse")
-.replace("s_ad_big_message_2", "I want to keep in mind")
-.replace("Add my Name", "Add my Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
-// now proceed to build the code
-var commentBeginAd_03 = "// BEGIN Ad 03\n";
-var commentEndAd_03 = "\n// END Ad 03\n\n";
-var HtmlFileName_03 = $('#order_id').val() + "-AD-03-" + "F-017";
-var lets_add_the_rest_for_Ad_03 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_03 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_03 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_03 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_03 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_03 = (commentBeginAd_03 + beforeHtmlFileName + HtmlFileName_03 + afterHtmlFileName + DOM_modified_for_Ad_03 + lets_add_the_rest_for_Ad_03 + commentEndAd_03).replace("</script>\n", "</script>");
-// Ad 03 END
-// Ad 04 BEGIN
-// Targeting Women with: I will believe... this verse every morning
-// So, let's modify the DOM for Ad 04
-var DOM_modified_for_Ad_04 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "My Name")
-.replace("s_ad_big_message_1", "I will believe")
-.replace("s_ad_big_message_2", "this verse every morning")
-.replace("Add my Name", "Add my Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
-// now proceed to build the code
-var commentBeginAd_04 = "// BEGIN Ad 04\n";
-var commentEndAd_04 = "\n// END Ad 04\n\n";
-var HtmlFileName_04 = $('#order_id').val() + "-AD-04-" + "F-017";
-var lets_add_the_rest_for_Ad_04 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_04 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_04 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_04 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_04 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_04 = (commentBeginAd_04 + beforeHtmlFileName + HtmlFileName_04 + afterHtmlFileName + DOM_modified_for_Ad_04 + lets_add_the_rest_for_Ad_04 + commentEndAd_04).replace("</script>\n", "</script>");
-// Ad 04 END
-// Ad 05 BEGIN
-// Targeting Women with: I want to remember... this verse every morning
-// So, let's modify the DOM for Ad 05
-var DOM_modified_for_Ad_05 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "My Name")
-.replace("s_ad_big_message_1", "I want to remember")
-.replace("s_ad_big_message_2", "this verse every morning")
-.replace("Add my Name", "Add my Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
-// now proceed to build the code
-var commentBeginAd_05 = "// BEGIN Ad 05\n";
-var commentEndAd_05 = "\n// END Ad 05\n\n";
-var HtmlFileName_05 = $('#order_id').val() + "-AD-05-" + "F-017";
-var lets_add_the_rest_for_Ad_05 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_05 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_05 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_05 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_05 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_05 = (commentBeginAd_05 + beforeHtmlFileName + HtmlFileName_05 + afterHtmlFileName + DOM_modified_for_Ad_05 + lets_add_the_rest_for_Ad_05 + commentEndAd_05).replace("</script>\n", "</script>");
-// Ad 05 END
-// Ad 06 BEGIN
-// Targeting Men with: so I asked her... What's your favorite verse?
-// So, let's modify the DOM for Ad 06
-var DOM_modified_for_Ad_06 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "Her Name")
-.replace("s_ad_big_message_1", "so I asked her")
-.replace("s_ad_big_message_2", "What's your favorite verse?")
-.replace("Add my Name", "Add her Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
-// now proceed to build the code
-var commentBeginAd_06 = "// BEGIN Ad 06\n";
-var commentEndAd_06 = "\n// END Ad 06\n\n";
-var HtmlFileName_06 = $('#order_id').val() + "-AD-06-" + "F-017";
-var lets_add_the_rest_for_Ad_06 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_06 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_06 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_06 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_06 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_06 = (commentBeginAd_06 + beforeHtmlFileName + HtmlFileName_06 + afterHtmlFileName + DOM_modified_for_Ad_06 + lets_add_the_rest_for_Ad_06 + commentEndAd_06).replace("</script>\n", "</script>");
-// Ad 06 END
-// Ad 07 BEGIN
-// Targeting Men with: I'd like her to... believe this verse every day
-// So, let's modify the DOM for Ad 07
-var DOM_modified_for_Ad_07 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "Her Name")
-.replace("s_ad_big_message_1", "I'd like her to")
-.replace("s_ad_big_message_2", "believe this verse every day")
-.replace("Add my Name", "Add her Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
-// now proceed to build the code
-var commentBeginAd_07 = "// BEGIN Ad 07\n";
-var commentEndAd_07 = "\n// END Ad 07\n\n";
-var HtmlFileName_07 = $('#order_id').val() + "-AD-07-" + "F-017";
-var lets_add_the_rest_for_Ad_07 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_07 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_07 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_07 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_07 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_07 = (commentBeginAd_07 + beforeHtmlFileName + HtmlFileName_07 + afterHtmlFileName + DOM_modified_for_Ad_07 + lets_add_the_rest_for_Ad_07 + commentEndAd_07).replace("</script>\n", "</script>");
-// Ad 07 END
-// Ad 08 BEGIN
-// Targeting Men with: there's a verse... I want to keep in mind
-// So, let's modify the DOM for Ad 08
-var DOM_modified_for_Ad_08 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "My Name")
-.replace("s_ad_big_message_1", "there's a verse")
-.replace("s_ad_big_message_2", "I want to keep in mind")
-.replace("Add my Name", "Add my Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/S-115.png')
-.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left" style="top: 580px;">');
-// now proceed to build the code
-var commentBeginAd_08 = "// BEGIN Ad 08\n";
-var commentEndAd_08 = "\n// END Ad 08\n\n";
-var HtmlFileName_08 = $('#order_id').val() + "-AD-08-" + "S-115";
-var lets_add_the_rest_for_Ad_08 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_08 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_08 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_08 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_08 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_08 = (commentBeginAd_08 + beforeHtmlFileName + HtmlFileName_08 + afterHtmlFileName + DOM_modified_for_Ad_08 + lets_add_the_rest_for_Ad_08 + commentEndAd_08).replace("</script>\n", "</script>");
-// Ad 08 END
-// Ad 09 BEGIN
-// Targeting Men with: I will believe... this verse every morning
-// So, let's modify the DOM for Ad 09
-var DOM_modified_for_Ad_09 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "My Name")
-.replace("s_ad_big_message_1", "I will believe")
-.replace("s_ad_big_message_2", "this verse every morning")
-.replace("Add my Name", "Add my Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/S-115.png')
-.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left" style="top: 580px;">');
-// now proceed to build the code
-var commentBeginAd_09 = "// BEGIN Ad 09\n";
-var commentEndAd_09 = "\n// END Ad 09\n\n";
-var HtmlFileName_09 = $('#order_id').val() + "-AD-09-" + "S-115";
-var lets_add_the_rest_for_Ad_09 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_09 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_09 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_09 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_09 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_09 = (commentBeginAd_09 + beforeHtmlFileName + HtmlFileName_09 + afterHtmlFileName + DOM_modified_for_Ad_09 + lets_add_the_rest_for_Ad_09 + commentEndAd_09).replace("</script>\n", "</script>");
-// Ad 09 END
-// Ad 10 BEGIN
-// Targeting Men with: I want to remember... this verse every morning
-// So, let's modify the DOM for Ad 10
-var DOM_modified_for_Ad_10 = $('html').html()
-.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-.replace("My Name", "My Name")
-.replace("s_ad_big_message_1", "I want to remember")
-.replace("s_ad_big_message_2", "this verse every morning")
-.replace("Add my Name", "Add my Name")
-.replace(/\'/g, "\\\'")
-.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
-.replace('p-original-size/S-001.png', 'p-original-size/S-115.png')
-.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left" style="top: 580px;">');
-// now proceed to build the code
-var commentBeginAd_10 = "// BEGIN Ad 10\n";
-var commentEndAd_10 = "\n// END Ad 10\n\n";
-var HtmlFileName_10 = $('#order_id').val() + "-AD-10-" + "S-115";
-var lets_add_the_rest_for_Ad_10 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_10 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_10 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_10 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_10 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
-var finishedWithAd_10 = (commentBeginAd_10 + beforeHtmlFileName + HtmlFileName_10 + afterHtmlFileName + DOM_modified_for_Ad_10 + lets_add_the_rest_for_Ad_10 + commentEndAd_10).replace("</script>\n", "</script>");
-// Ad 10 END
 
 
-// fill textarea with complete code to render all ads
-$('#fcontent_01_10').val(
-commentFileTitle +
-initialRequireFileSystem +
-finishedWithAd_01 +
-finishedWithAd_02 +
-finishedWithAd_03 +
-finishedWithAd_04 +
-finishedWithAd_05 +
-finishedWithAd_06 +
-finishedWithAd_07 +
-finishedWithAd_08 +
-finishedWithAd_09 +
-finishedWithAd_10
-);
-});
+
+		////////////////////////////////////
+		// BEGIN node JS file 01_10 ///////
+		////////////////////////////////////
+		// fill the input that will contain the content of the js file to create
+		$('#populate_01_10').on('click', function() {
+		var idNeeded = $('#order_id').val();
+		$('#fname_01_10').val(idNeeded + '_01_10');
+		$('#fname_11_20').val(idNeeded + '_11_20');
+		$('#fname_21_30').val(idNeeded + '_21_30');
+		$('#fname_31_40').val(idNeeded + '_31_40');
+		$('#fname_41_50').val(idNeeded + '_41_50');
+		$('#fname_51_60').val(idNeeded + '_51_60');
+		$('#fname_61_70').val(idNeeded + '_61_70');
+		$('#fname_71_80').val(idNeeded + '_71_80');
+		$('#fname_81_90').val(idNeeded + '_81_90');
+		$('#fname_91_100').val(idNeeded + '_91_100');
+		// node JS File to run these 10 images for this verse
+		var commentFileTitle = "// node JS File to run these 10 images for this verse\n\n";
+		// var to populate initial for Autofill node JS File Content
+		var initialRequireFileSystem = "const fsPromises = require('fs').promises;\n\n";
+		// common variables for all ads
+		var beforeHtmlFileName = "fsPromises.writeFile('";
+		var afterHtmlFileName = ".html', '<html>";
+		// AD_01 BEGIN
+		// Targeting Women with: so I asked him... What's your favourite verse?
+		// So, let's modify the DOM for AD_01
+		var DOM_modified_for_AD_01 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "His Name")
+		.replace("s_ad_big_message_1", "so I asked him")
+		.replace("s_ad_big_message_2", "What's your favorite verse?")
+		.replace("Add my Name", "Add his Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 230px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/S-115.png');
+		// now proceed to build the code
+		var commentBeginAD_01 = "// BEGIN AD_01\n";
+		var commentEndAD_01 = "\n// END AD_01\n\n";
+		var HtmlFileName_01 = $('#order_id').val() + "-AD_01-" + "S-115";
+		var lets_add_the_rest_for_AD_01 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_01 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_01 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_01 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_01 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_01 = (commentBeginAD_01 + beforeHtmlFileName + HtmlFileName_01 + afterHtmlFileName + DOM_modified_for_AD_01 + lets_add_the_rest_for_AD_01 + commentEndAD_01).replace("</script>\n", "</script>");
+		// AD_01 END
+		// AD_02 BEGIN
+		// Targeting Women with: I'd like him to... believe this verse every day
+		// So, let's modify the DOM for AD_02
+		var DOM_modified_for_AD_02 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "His Name")
+		.replace("s_ad_big_message_1", "I'd like him to")
+		.replace("s_ad_big_message_2", "believe this verse every day")
+		.replace("Add my Name", "Add his Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 245px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/S-115.png');
+		// now proceed to build the code
+		var commentBeginAD_02 = "// BEGIN AD_02\n";
+		var commentEndAD_02 = "\n// END AD_02\n\n";
+		var HtmlFileName_02 = $('#order_id').val() + "-AD_02-" + "S-115";
+		var lets_add_the_rest_for_AD_02 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_02 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_02 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_02 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_02 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_02 = (commentBeginAD_02 + beforeHtmlFileName + HtmlFileName_02 + afterHtmlFileName + DOM_modified_for_AD_02 + lets_add_the_rest_for_AD_02 + commentEndAD_02).replace("</script>\n", "</script>");
+		// AD_02 END
+		// AD_03 BEGIN
+		// Targeting Women with: there's a verse... I want to keep in mind
+		// So, let's modify the DOM for AD_03
+		var DOM_modified_for_AD_03 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "My Name")
+		.replace("s_ad_big_message_1", "there's a verse")
+		.replace("s_ad_big_message_2", "I want to keep in mind")
+		.replace("Add my Name", "Add my Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		// now proceed to build the code
+		var commentBeginAD_03 = "// BEGIN AD_03\n";
+		var commentEndAD_03 = "\n// END AD_03\n\n";
+		var HtmlFileName_03 = $('#order_id').val() + "-AD_03-" + "F-017";
+		var lets_add_the_rest_for_AD_03 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_03 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_03 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_03 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_03 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_03 = (commentBeginAD_03 + beforeHtmlFileName + HtmlFileName_03 + afterHtmlFileName + DOM_modified_for_AD_03 + lets_add_the_rest_for_AD_03 + commentEndAD_03).replace("</script>\n", "</script>");
+		// AD_03 END
+		// AD_04 BEGIN
+		// Targeting Women with: I will believe... this verse every morning
+		// So, let's modify the DOM for AD_04
+		var DOM_modified_for_AD_04 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "My Name")
+		.replace("s_ad_big_message_1", "I will believe")
+		.replace("s_ad_big_message_2", "this verse every morning")
+		.replace("Add my Name", "Add my Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		// now proceed to build the code
+		var commentBeginAD_04 = "// BEGIN AD_04\n";
+		var commentEndAD_04 = "\n// END AD_04\n\n";
+		var HtmlFileName_04 = $('#order_id').val() + "-AD_04-" + "F-017";
+		var lets_add_the_rest_for_AD_04 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_04 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_04 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_04 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_04 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_04 = (commentBeginAD_04 + beforeHtmlFileName + HtmlFileName_04 + afterHtmlFileName + DOM_modified_for_AD_04 + lets_add_the_rest_for_AD_04 + commentEndAD_04).replace("</script>\n", "</script>");
+		// AD_04 END
+		// AD_05 BEGIN
+		// Targeting Women with: I want to remember... this verse every morning
+		// So, let's modify the DOM for AD_05
+		var DOM_modified_for_AD_05 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "My Name")
+		.replace("s_ad_big_message_1", "I want to remember")
+		.replace("s_ad_big_message_2", "this verse every morning")
+		.replace("Add my Name", "Add my Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		// now proceed to build the code
+		var commentBeginAD_05 = "// BEGIN AD_05\n";
+		var commentEndAD_05 = "\n// END AD_05\n\n";
+		var HtmlFileName_05 = $('#order_id').val() + "-AD_05-" + "F-017";
+		var lets_add_the_rest_for_AD_05 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_05 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_05 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_05 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_05 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_05 = (commentBeginAD_05 + beforeHtmlFileName + HtmlFileName_05 + afterHtmlFileName + DOM_modified_for_AD_05 + lets_add_the_rest_for_AD_05 + commentEndAD_05).replace("</script>\n", "</script>");
+		// AD_05 END
+		// AD_06 BEGIN
+		// Targeting Men with: so I asked her... What's your favorite verse?
+		// So, let's modify the DOM for AD_06
+		var DOM_modified_for_AD_06 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "Her Name")
+		.replace("s_ad_big_message_1", "so I asked her")
+		.replace("s_ad_big_message_2", "What's your favorite verse?")
+		.replace("Add my Name", "Add her Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 240px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		// now proceed to build the code
+		var commentBeginAD_06 = "// BEGIN AD_06\n";
+		var commentEndAD_06 = "\n// END AD_06\n\n";
+		var HtmlFileName_06 = $('#order_id').val() + "-AD_06-" + "F-017";
+		var lets_add_the_rest_for_AD_06 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_06 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_06 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_06 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_06 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_06 = (commentBeginAD_06 + beforeHtmlFileName + HtmlFileName_06 + afterHtmlFileName + DOM_modified_for_AD_06 + lets_add_the_rest_for_AD_06 + commentEndAD_06).replace("</script>\n", "</script>");
+		// AD_06 END
+		// AD_07 BEGIN
+		// Targeting Men with: I'd like her to... believe this verse every day
+		// So, let's modify the DOM for AD_07
+		var DOM_modified_for_AD_07 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "Her Name")
+		.replace("s_ad_big_message_1", "I'd like her to")
+		.replace("s_ad_big_message_2", "believe this verse every day")
+		.replace("Add my Name", "Add her Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 257px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/F-017.png');
+		// now proceed to build the code
+		var commentBeginAD_07 = "// BEGIN AD_07\n";
+		var commentEndAD_07 = "\n// END AD_07\n\n";
+		var HtmlFileName_07 = $('#order_id').val() + "-AD_07-" + "F-017";
+		var lets_add_the_rest_for_AD_07 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_07 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_07 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_07 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_07 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_07 = (commentBeginAD_07 + beforeHtmlFileName + HtmlFileName_07 + afterHtmlFileName + DOM_modified_for_AD_07 + lets_add_the_rest_for_AD_07 + commentEndAD_07).replace("</script>\n", "</script>");
+		// AD_07 END
+		// AD_08 BEGIN
+		// Targeting Men with: there's a verse... I want to keep in mind
+		// So, let's modify the DOM for AD_08
+		var DOM_modified_for_AD_08 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "My Name")
+		.replace("s_ad_big_message_1", "there's a verse")
+		.replace("s_ad_big_message_2", "I want to keep in mind")
+		.replace("Add my Name", "Add my Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 234px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/S-115.png')
+		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left" style="top: 580px;">');
+		// now proceed to build the code
+		var commentBeginAD_08 = "// BEGIN AD_08\n";
+		var commentEndAD_08 = "\n// END AD_08\n\n";
+		var HtmlFileName_08 = $('#order_id').val() + "-AD_08-" + "S-115";
+		var lets_add_the_rest_for_AD_08 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_08 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_08 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_08 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_08 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_08 = (commentBeginAD_08 + beforeHtmlFileName + HtmlFileName_08 + afterHtmlFileName + DOM_modified_for_AD_08 + lets_add_the_rest_for_AD_08 + commentEndAD_08).replace("</script>\n", "</script>");
+		// AD_08 END
+		// AD_09 BEGIN
+		// Targeting Men with: I will believe... this verse every morning
+		// So, let's modify the DOM for AD_09
+		var DOM_modified_for_AD_09 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "My Name")
+		.replace("s_ad_big_message_1", "I will believe")
+		.replace("s_ad_big_message_2", "this verse every morning")
+		.replace("Add my Name", "Add my Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 236px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/S-115.png')
+		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left" style="top: 580px;">');
+		// now proceed to build the code
+		var commentBeginAD_09 = "// BEGIN AD_09\n";
+		var commentEndAD_09 = "\n// END AD_09\n\n";
+		var HtmlFileName_09 = $('#order_id').val() + "-AD_09-" + "S-115";
+		var lets_add_the_rest_for_AD_09 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_09 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_09 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_09 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_09 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_09 = (commentBeginAD_09 + beforeHtmlFileName + HtmlFileName_09 + afterHtmlFileName + DOM_modified_for_AD_09 + lets_add_the_rest_for_AD_09 + commentEndAD_09).replace("</script>\n", "</script>");
+		// AD_09 END
+		// AD_10 BEGIN
+		// Targeting Men with: I want to remember... this verse every morning
+		// So, let's modify the DOM for AD_10
+		var DOM_modified_for_AD_10 = $('html').html()
+		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
+		.replace("My Name", "My Name")
+		.replace("s_ad_big_message_1", "I want to remember")
+		.replace("s_ad_big_message_2", "this verse every morning")
+		.replace("Add my Name", "Add my Name")
+		.replace(/\'/g, "\\\'")
+		.replace("text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px;", "text-shadow: black 5px 0px 0px, black 4.82963px 1.2941px 0px, black 4.33013px 2.5px 0px, black 3.53553px 3.53553px 0px, black 2.5px 4.33013px 0px, black 1.2941px 4.82963px 0px, black 0px 5px 0px, black -1.2941px 4.82963px 0px, black -2.5px 4.33013px 0px, black -3.53553px 3.53553px 0px, black -4.33013px 2.5px 0px, black -4.82963px 1.2941px 0px, black -5px 0px 0px, black -4.82963px -1.2941px 0px, black -4.33013px -2.5px 0px, black -3.53553px -3.53553px 0px, black -2.5px -4.33013px 0px, black -1.2941px -4.82963px 0px, black 0px -5px 0px, black 1.2941px -4.82963px 0px, black 2.5px -4.33013px 0px, black 3.53553px -3.53553px 0px, black 4.33013px -2.5px 0px, black 4.82963px -1.2941px 0px, black 5px 0px 0px; font-size: 168px !important;")
+		.replace('p-original-size/S-001.png', 'p-original-size/S-115.png')
+		.replace('<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left">', '<div id="" class="wrap_container_showing_selected_picture_little_Left customCSSforScenery_flex_little_Left" style="top: 580px;">');
+		// now proceed to build the code
+		var commentBeginAD_10 = "// BEGIN AD_10\n";
+		var commentEndAD_10 = "\n// END AD_10\n\n";
+		var HtmlFileName_10 = $('#order_id').val() + "-AD_10-" + "S-115";
+		var lets_add_the_rest_for_AD_10 = "</html>', function (err) {  if (err) throw err;  console.log('" + HtmlFileName_10 + " Saved!');}).then(() => {    console.log('I think " + HtmlFileName_10 + " is saved, so I\\\'m going to run the puppeteer now');const puppeteer = require('/home/demo/node_modules/puppeteer'); (async () => { const browser = await puppeteer.launch({      defaultViewport: {width: 1200, height: 1200}  }); const page = await browser.newPage(); await page.goto('file:///media/demo/ALL-DATA/Github/BibleCups/ADS_DESIGN_HERE/ADS_Pages_Ready_To_Edit_Before_Node/" + HtmlFileName_10 + ".html'); await page.waitForTimeout(100); await page.screenshot({ path: '//media/demo/ALL-DATA/Github/BibleCups/ADS_RENDER_HERE/" + HtmlFileName_10 + ".png' }); await browser.close(); })();  }).catch(er => {    console.log(er);  });";
+		var finishedWithAD_10 = (commentBeginAD_10 + beforeHtmlFileName + HtmlFileName_10 + afterHtmlFileName + DOM_modified_for_AD_10 + lets_add_the_rest_for_AD_10 + commentEndAD_10).replace("</script>\n", "</script>");
+		// AD_10 END
 
 
-// BEGIN save js file to later run puppeteer
-(function() {
-    var textFile = null,
-        makeTextFile = function(js) {
-            var data = new Blob([js], {
-                type: 'text/javascript'
-            });
-
-            if (textFile !== null) {
-                window.URL.revokeObjectURL(textFile);
-            }
-
-            textFile = window.URL.createObjectURL(data);
-
-            return textFile;
-        };
-
-
-    var create = document.getElementById('create_01_10');
-    var fileContent = document.getElementById("fcontent_01_10");
-
-    create.addEventListener('click', function() {
-        const fileName = document.getElementById("fname_01_10").value;
-        document.getElementById("downloadlink_01_10").setAttribute("download", fileName);
-        var link = document.getElementById('downloadlink_01_10');
-        link.href = makeTextFile(fileContent.value);
-        link.style.display = 'block';
-    }, false);
-})();
-////////////////////////////////////
-// END node JS file 01-10 ///////
-////////////////////////////////////
+		// fill textarea with complete code to render all ads
+		$('#fcontent_01_10').val(
+		commentFileTitle +
+		initialRequireFileSystem +
+		finishedWithAD_01 +
+		finishedWithAD_02 +
+		finishedWithAD_03 +
+		finishedWithAD_04 +
+		finishedWithAD_05 +
+		finishedWithAD_06 +
+		finishedWithAD_07 +
+		finishedWithAD_08 +
+		finishedWithAD_09 +
+		finishedWithAD_10
+		);
+		});
 
 
+		// BEGIN save js file to later run puppeteer
+		(function() {
+		    var textFile = null,
+		        makeTextFile = function(js) {
+		            var data = new Blob([js], {
+		                type: 'text/javascript'
+		            });
+
+		            if (textFile !== null) {
+		                window.URL.revokeObjectURL(textFile);
+		            }
+
+		            textFile = window.URL.createObjectURL(data);
+
+		            return textFile;
+		        };
+
+
+		    var create = document.getElementById('create_01_10');
+		    var fileContent = document.getElementById("fcontent_01_10");
+
+		    create.addEventListener('click', function() {
+		        const fileName = document.getElementById("fname_01_10").value;
+		        document.getElementById("downloadlink_01_10").setAttribute("download", fileName);
+		        var link = document.getElementById('downloadlink_01_10');
+		        link.href = makeTextFile(fileContent.value);
+		        // link.style.display = 'block';
+		    }, false);
+		})();
+		////////////////////////////////////
+		// END node JS file 01_10 ///////
+		////////////////////////////////////
 
 
 
