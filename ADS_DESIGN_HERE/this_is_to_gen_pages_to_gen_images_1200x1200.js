@@ -416,7 +416,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_01
 		var DOM_modified_for_AD_01 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0006')
+		.replace('bgc-0003', 'bgc-0012')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "so I asked him")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -436,7 +436,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_02
 		var DOM_modified_for_AD_02 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0007')
+		.replace('bgc-0003', 'bgc-0006')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "I'd like him to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -456,7 +456,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_03
 		var DOM_modified_for_AD_03 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0003')
+		.replace('bgc-0003', 'bgc-0014')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "there's a verse")
 		.replace("s_ad_big_message_2", "I want to keep in mind")
@@ -478,7 +478,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_04
 		var DOM_modified_for_AD_04 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0008')
+		.replace('bgc-0003', 'bgc-0015')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I will believe")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -500,7 +500,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_05
 		var DOM_modified_for_AD_05 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0010')
+		.replace('bgc-0003', 'bgc-0016')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I want to remember")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -522,7 +522,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_06
 		var DOM_modified_for_AD_06 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0014')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "so I asked her")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -544,7 +544,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_07
 		var DOM_modified_for_AD_07 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0016')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "I'd like her to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -695,7 +695,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_11
 		var DOM_modified_for_AD_11 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0006')
+		.replace('bgc-0003', 'bgc-0012')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "so I asked him")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -715,7 +715,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_12
 		var DOM_modified_for_AD_12 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0007')
+		.replace('bgc-0003', 'bgc-0006')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "I'd like him to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -735,7 +735,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_13
 		var DOM_modified_for_AD_13 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0003')
+		.replace('bgc-0003', 'bgc-0014')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "there's a verse")
 		.replace("s_ad_big_message_2", "I want to keep in mind")
@@ -757,7 +757,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_14
 		var DOM_modified_for_AD_14 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0008')
+		.replace('bgc-0003', 'bgc-0015')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I will believe")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -779,7 +779,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_15
 		var DOM_modified_for_AD_15 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0010')
+		.replace('bgc-0003', 'bgc-0016')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I want to remember")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -801,7 +801,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_16
 		var DOM_modified_for_AD_16 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0014')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "so I asked her")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -823,7 +823,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_17
 		var DOM_modified_for_AD_17 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0016')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "I'd like her to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -974,7 +974,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_21
 		var DOM_modified_for_AD_21 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0006')
+		.replace('bgc-0003', 'bgc-0012')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "so I asked him")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -994,7 +994,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_22
 		var DOM_modified_for_AD_22 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0007')
+		.replace('bgc-0003', 'bgc-0006')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "I'd like him to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -1014,7 +1014,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_23
 		var DOM_modified_for_AD_23 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0003')
+		.replace('bgc-0003', 'bgc-0014')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "there's a verse")
 		.replace("s_ad_big_message_2", "I want to keep in mind")
@@ -1036,7 +1036,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_24
 		var DOM_modified_for_AD_24 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0008')
+		.replace('bgc-0003', 'bgc-0015')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I will believe")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -1058,7 +1058,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_25
 		var DOM_modified_for_AD_25 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0010')
+		.replace('bgc-0003', 'bgc-0016')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I want to remember")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -1080,7 +1080,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_26
 		var DOM_modified_for_AD_26 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0014')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "so I asked her")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -1102,7 +1102,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_27
 		var DOM_modified_for_AD_27 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0016')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "I'd like her to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -1253,7 +1253,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_31
 		var DOM_modified_for_AD_31 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0006')
+		.replace('bgc-0003', 'bgc-0012')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "so I asked him")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -1273,7 +1273,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_32
 		var DOM_modified_for_AD_32 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0007')
+		.replace('bgc-0003', 'bgc-0006')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "I'd like him to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -1293,7 +1293,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_33
 		var DOM_modified_for_AD_33 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0003')
+		.replace('bgc-0003', 'bgc-0014')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "there's a verse")
 		.replace("s_ad_big_message_2", "I want to keep in mind")
@@ -1315,7 +1315,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_34
 		var DOM_modified_for_AD_34 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0008')
+		.replace('bgc-0003', 'bgc-0015')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I will believe")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -1337,7 +1337,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_35
 		var DOM_modified_for_AD_35 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0010')
+		.replace('bgc-0003', 'bgc-0016')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I want to remember")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -1359,7 +1359,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_36
 		var DOM_modified_for_AD_36 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0014')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "so I asked her")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -1381,7 +1381,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_37
 		var DOM_modified_for_AD_37 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0016')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "I'd like her to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -1532,7 +1532,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_41
 		var DOM_modified_for_AD_41 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0006')
+		.replace('bgc-0003', 'bgc-0012')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "so I asked him")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -1552,7 +1552,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_42
 		var DOM_modified_for_AD_42 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0007')
+		.replace('bgc-0003', 'bgc-0006')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "I'd like him to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
@@ -1572,7 +1572,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_43
 		var DOM_modified_for_AD_43 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0003')
+		.replace('bgc-0003', 'bgc-0014')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "there's a verse")
 		.replace("s_ad_big_message_2", "I want to keep in mind")
@@ -1594,7 +1594,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_44
 		var DOM_modified_for_AD_44 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0008')
+		.replace('bgc-0003', 'bgc-0015')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I will believe")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -1616,7 +1616,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_45
 		var DOM_modified_for_AD_45 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0010')
+		.replace('bgc-0003', 'bgc-0016')
 		.replace("My Name", "My Name")
 		.replace("s_ad_big_message_1", "I want to remember")
 		.replace("s_ad_big_message_2", "this verse every morning")
@@ -1638,7 +1638,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_46
 		var DOM_modified_for_AD_46 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0014')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "so I asked her")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")
@@ -1660,7 +1660,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_47
 		var DOM_modified_for_AD_47 = $('html').html()
 		.replace('../this_is_to_gen_pages_to_gen_images_1200x1200.js', '')
-		.replace('bgc-0003', 'bgc-0016')
+		.replace('bgc-0003', 'bgc-0003')
 		.replace("My Name", "Her Name")
 		.replace("s_ad_big_message_1", "I'd like her to")
 		.replace("s_ad_big_message_2", "believe this verse every day")
