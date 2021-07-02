@@ -710,6 +710,21 @@ filter: drop-shadow(0px 0px 4px gray);
       padding-bottom: 0px;
 	  overflow: hidden;
     }
+    .modal_announce_fundraising {
+      position: fixed;
+      display: none;
+      height: 454px;
+      width: 296px;
+      top: calc(4px + 44px);
+      left: 4px;
+      background: #111111;
+      z-index: 1;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+	  overflow: hidden;
+    }
     .modal_place_the_order {
       position: fixed;
       display: none;
@@ -758,6 +773,12 @@ height: 1px;
 color: #ae9c80;
 }
 .placeholder_mug_side {
+display: inline-block;
+width: 296px;
+height: 296px;
+text-align:center;
+}
+.placeholder_announce_fundraising {
 display: inline-block;
 width: 296px;
 height: 296px;

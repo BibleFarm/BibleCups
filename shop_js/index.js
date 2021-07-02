@@ -1284,7 +1284,7 @@ $('.container_showing_selected_background').attr("src", "bg-bleed/" + selectedBa
   // BEGIN STEP 5 - REVIEW THE ORDER -->
   // ////////////////////////// -->
   $( "body" ).on( "click", ".reviewOrder", function(event) {
-  $(".wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery").hide();
+  $(".wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .modal_announce_fundraising").hide();
   $(".modal_review_the_order").show();
         $(".opacity_cover").show();
 // re-render the textfill
@@ -1309,9 +1309,22 @@ console.log("The 5 seconds went by, so we should now have it rendered.");
   // ////////////////////////// -->
 
   // ////////////////////////// -->
+  // BEGIN STEP 5b - ANNOUNCE FUNDRAISING -->
+  // ////////////////////////// -->
+  $( "body" ).on( "click", ".announceFundraising", function(event) {
+  $(".modal_review_the_order").hide();
+  $(".modal_announce_fundraising").show();
+        $(".opacity_cover").show();
+});
+  // ////////////////////////// -->
+  // END STEP 5b - ANNOUNCE FUNDRAISING -->
+  // ////////////////////////// -->
+
+  // ////////////////////////// -->
   // BEGIN STEP 6 - PLACE THE ORDER -->
   // ////////////////////////// -->
 $( ".placeOrder" ).on( "click", function() {
+  $(".modal_announce_fundraising").hide();
         $(".modal_place_the_order").show();
         $(".opacity_cover").show();
 		$('.customize_email').focus();
@@ -1358,19 +1371,19 @@ console.log('completeDescription is: ' + completeDescription);
 
   // hide any and all modals when click on menu, except menu_modal
   $("#menu").click(function() {
-  $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order, .about_modal, .help_modal").hide();
+  $(".modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal").hide();
   $("#PureChatWidget").attr("style", "z-index: -1 !important");
   });
   // hide any and all modals when click outside
   $(".opacity_cover, .wrap_gofundme_modal_bar").click(function() {
-  $(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order, .about_modal, .help_modal").hide();
+  $(".opacity_cover, .menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order, .about_modal, .help_modal").hide();
   });
 
   // ////////////////////////// -->
   // Begin OrderFlow navigation -->
   // ////////////////////////// -->
 $('body').find('.changeVerse').on( "click", function() {
-$(".menu_modal, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order").hide();
+$(".menu_modal, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order").hide();
 $('.modal_customize_verse').show();
 // give it time to update in order to prevent messup while is says undefined - undefined - undefined
 $('.selected_verse').hide();
@@ -1379,7 +1392,7 @@ $('.selected_verse').show();
 }, 1000);
 });
 $('body').find('.addYourName').on( "click", function() {
-$(".menu_modal, .modal_customize_verse, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order").hide();
+$(".menu_modal, .modal_customize_verse, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order").hide();
 $('.modal_customize_name').show();
 if ($('#hidden_name_desired').text() == 'Your Name') {
 $('#customize_name').val('');
@@ -1391,11 +1404,11 @@ $('.rendered_customerName_in_modalReviewOrder').html('');
 $('.customize_name').focus();
 });
 $('body').find('.changePicture').on( "click", function() {
-$(".menu_modal, .modal_customize_verse, .modal_customize_name, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_place_the_order").hide();
+$(".menu_modal, .modal_customize_verse, .modal_customize_name, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .wrap_swiper_container_backgrounds_solids, .wrap_swiper_container_backgrounds_gradients, .wrap_swiper_container_backgrounds_patterns, .modal_customize_backgrounds, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order").hide();
 $('.modal_customize_picture').show();
 });
 $('body').find('.changeBackground').on( "click", function() {
-$(".menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .modal_review_the_order, .modal_place_the_order").hide();
+$(".menu_modal, .modal_customize_verse, .modal_customize_name, .modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery, .modal_review_the_order, .modal_announce_fundraising, .modal_place_the_order").hide();
 $('.modal_customize_backgrounds, .wrap_swiper_container_backgrounds_solids').show();
 });
 $('body').find('.reviewOrder').on( "click", function() {
