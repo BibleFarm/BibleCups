@@ -66,7 +66,52 @@ function getWelcome() {
         var p = messageObj.p;
   //      $('#hidden_div_verse').html(verse);
   //      $('#hidden_div_ref').html(ref);
-        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured"><img class="" width="296" height="444" src="m/' + b + '-' + c + '-' + v + '.png" alt="" /></div><div class="sharing_sub_panel"><span class="changeVerse flex_item bf_links" book="' + b + '" chapter="' + c + '" verse="' + v + '" picture="' + p + '">change verse</span><span class="addYourName flex_item bf_links">add YourName</span><span class="changePicture flex_item bf_links">change picture</span></div><div class="share"><a class="bf_links" href="https://www.biblecups.com/share/mugs/' + b + '-' + c + '-' + v + '.html" target="_blank">share</a></div></div>');
+        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured"><img class="" width="296" height="444" src="m/' + b + '-' + c + '-' + v + '.png" alt="" /></div><div class="sharing_sub_panel"><span class="changeVerse flex_item bf_links" book="' + b + '" chapter="' + c + '" verse="' + v + '" picture="' + p + '">change verse</span><span class="addYourNameQuickFix flex_item bf_links">add YourName</span><span class="changePictureQuickFix flex_item bf_links">change picture</span></div><div class="share"><a class="bf_links" href="https://www.biblecups.com/share/mugs/' + b + '-' + c + '-' + v + '.html" target="_blank">share</a></div></div>');
+
+
+/////////////////////////////////////
+// BEGIN QuickFix ///////////////////////////////////
+/////////////////////////////////////
+        $( ".gofundme_flex-container" ).on( "click", ".addYourNameQuickFix", function(event) {
+
+        $(this).parent().find(".changeVerse").trigger({
+        			type: "click",
+        			which: 1
+        		});
+        setTimeout(function() {
+        $(".modal_customize_verse > .wrap_continue_bar > .addYourName").trigger({
+        			type: "click",
+        			which: 1
+        		});
+        }, 2000);
+
+        });
+        /////////////////////////////////////
+        $( ".gofundme_flex-container" ).on( "click", ".changePictureQuickFix", function(event) {
+
+        $(this).parent().find(".changeVerse").trigger({
+        			type: "click",
+        			which: 1
+        		});
+            setTimeout(function() {
+            $(".modal_customize_verse > .wrap_continue_bar > .addYourName").trigger({
+            			type: "click",
+            			which: 1
+            		});
+            }, 100);
+        setTimeout(function() {
+        $(".modal_customize_name > .wrap_continue_bar > .continueToPictures").trigger({
+        			type: "click",
+        			which: 1
+        		});
+        }, 200);
+
+        });
+/////////////////////////////////////
+// END QuickFix ///////////////////////////////////
+/////////////////////////////////////
+
+
 
         $( ".gofundme_flex-container" ).on( "click", ".changeVerse, .addYourName, .changePicture", function(event) {
           // make sure when user clicks on a featured item, they have that picture in the modals
