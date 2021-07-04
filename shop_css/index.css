@@ -1880,19 +1880,55 @@ font-weight: normal;
 .help_icons_flex_item {
   padding: 8px;
 }
-.we_will_move_the_picture_up_more_toward_the_middle {
+.we_will_move_the_picture_up_more_toward_the_middle_1 {
   position: absolute;
       display: block;
-      top: 118px;
+      top: 109px;
       width: 296px;
       text-align: center;
       line-height: 21px;
       font-size: 18px;
 }
-.we_are_working_on_a_full_feature_shopping_cart {
+.we_will_move_the_picture_up_more_toward_the_middle_2 {
+  position: absolute;
+      display: block;
+      top: 131px;
+      width: 296px;
+      text-align: center;
+      line-height: 21px;
+      font-size: 18px;
+}
+.we_will_move_the_picture_up_more_toward_the_middle_3 {
+  position: absolute;
+      display: block;
+      top: 153px;
+      width: 296px;
+      text-align: center;
+      line-height: 21px;
+      font-size: 18px;
+}
+.we_are_working_on_a_full_feature_shopping_cart_1 {
   position: absolute;
       display: block;
       top: 331px;
+      width: 296px;
+      text-align: center;
+      line-height: 21px;
+      font-size: 18px;
+}
+.we_are_working_on_a_full_feature_shopping_cart_2 {
+  position: absolute;
+      display: block;
+      top: 354px;
+      width: 296px;
+      text-align: center;
+      line-height: 21px;
+      font-size: 18px;
+}
+.we_are_working_on_a_full_feature_shopping_cart_3 {
+  position: absolute;
+      display: block;
+      top: 377px;
       width: 296px;
       text-align: center;
       line-height: 21px;

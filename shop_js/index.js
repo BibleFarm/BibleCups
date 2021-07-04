@@ -66,54 +66,17 @@ function getWelcome() {
         var p = messageObj.p;
   //      $('#hidden_div_verse').html(verse);
   //      $('#hidden_div_ref').html(ref);
-        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured"><img class="" width="296" height="444" src="m/' + b + '-' + c + '-' + v + '.png" alt="" /></div><div class="sharing_sub_panel"><span class="changeVerse flex_item bf_links" book="' + b + '" chapter="' + c + '" verse="' + v + '" picture="' + p + '">change verse</span><span class="addYourNameQuickFix flex_item bf_links">add YourName</span><span class="changePictureQuickFix flex_item bf_links">change picture</span></div><div class="share"><a class="bf_links" href="https://www.biblecups.com/share/mugs/' + b + '-' + c + '-' + v + '.html" target="_blank">share</a></div></div>');
-
-
-/////////////////////////////////////
-// BEGIN QuickFix ///////////////////////////////////
-/////////////////////////////////////
-        $( ".gofundme_flex-container" ).on( "click", ".addYourNameQuickFix", function(event) {
-
-        $(this).parent().find(".changeVerse").trigger({
-        			type: "click",
-        			which: 1
-        		});
-        setTimeout(function() {
-        $(".modal_customize_verse > .wrap_continue_bar > .addYourName").trigger({
-        			type: "click",
-        			which: 1
-        		});
-        }, 2000);
-
-        });
-        /////////////////////////////////////
-        $( ".gofundme_flex-container" ).on( "click", ".changePictureQuickFix", function(event) {
-
-        $(this).parent().find(".changeVerse").trigger({
-        			type: "click",
-        			which: 1
-        		});
-            setTimeout(function() {
-            $(".modal_customize_verse > .wrap_continue_bar > .addYourName").trigger({
-            			type: "click",
-            			which: 1
-            		});
-            }, 100);
-        setTimeout(function() {
-        $(".modal_customize_name > .wrap_continue_bar > .continueToPictures").trigger({
-        			type: "click",
-        			which: 1
-        		});
-        }, 200);
-
-        });
-/////////////////////////////////////
-// END QuickFix ///////////////////////////////////
-/////////////////////////////////////
-
-
+        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured"><img class="" width="296" height="444" src="m/' + b + '-' + c + '-' + v + '.png" alt="" /></div><div class="sharing_sub_panel"><span class="changeVerse flex_item bf_links" book="' + b + '" chapter="' + c + '" verse="' + v + '" picture="' + p + '">change verse</span><span class="addYourName flex_item bf_links">add YourName</span><span class="changePicture flex_item bf_links">change picture</span></div><div class="share"><a class="bf_links" href="https://www.biblecups.com/share/mugs/' + b + '-' + c + '-' + v + '.html" target="_blank">share</a></div></div>');
 
         $( ".gofundme_flex-container" ).on( "click", ".changeVerse, .addYourName, .changePicture", function(event) {
+          // make sure when user clicks on a featured item, we update the hidden divs BEFORE the other function goes to see what the are
+        var neededBookForThisClick = $(this).parent().find(".changeVerse").attr("book");
+        $('#hidden_book_desired').text(neededBookForThisClick);
+        var neededChapterForThisClick = $(this).parent().find(".changeVerse").attr("chapter");
+        $('#hidden_chapter_desired').text(neededChapterForThisClick);
+        var neededVerseForThisClick = $(this).parent().find(".changeVerse").attr("verse");
+        $('#hidden_verse_desired').text(neededVerseForThisClick);
+
           // make sure when user clicks on a featured item, they have that picture in the modals
         var neededPictureForThisClick = $(this).parent().find(".changeVerse").attr("picture");
         $('#hidden_picture_desired').html(neededPictureForThisClick);
@@ -400,7 +363,7 @@ var jqxhr = $.get( completeVerseURLtoGrab, function() {
 var html = jQuery('<div>').html(result);
 var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '').replace(/\(\(.*?\)\)/g , '');
 console.log("Removed the italics and ref like this: " + removedItalicsAndRef);
-$('.populated_ref_with_ajax').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
+$('.populated_ref_with_ajax, .populated_ref_with_ajax_in_modalReviewOrder').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
   console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
 
 $('.populated_verse_with_ajax').html(removedItalicsAndRef);
@@ -560,7 +523,7 @@ $(".wait_to_load_options").show();
 		if (clock == 0) {
 			clearInterval(timer1);
 			$("#btn_countdown_start").prop("disabled", false);
-			$(".wait_to_load_options").hide("slow");
+			$(".wait_to_load_options").hide();
 		}
 	}
   setTimeout(function() {
@@ -592,7 +555,7 @@ var jqxhr = $.get( completeVerseURLtoGrab, function() {
 var html = jQuery('<div>').html(result);
 var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '').replace(/\(\(.*?\)\)/g , '');
 console.log("Removed the italics and ref like this: " + removedItalicsAndRef);
-$('.populated_ref_with_ajax').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
+$('.populated_ref_with_ajax, .populated_ref_with_ajax_in_modalReviewOrder').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
   console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
 
 $('.populated_verse_with_ajax').html(removedItalicsAndRef);
@@ -819,9 +782,7 @@ var jqxhr = $.get( completeVerseURLtoGrab, function() {
 var html = jQuery('<div>').html(result);
 var removedItalicsAndRef = $(html).find('.v').html().replace(/\[.*?\]/g , '').replace(/<i>/ , '').replace(/<\/i>/ , '').replace(/\(\(.*?\)\)/g , '');
 console.log("Removed the italics and ref like this: " + removedItalicsAndRef);
-$('.populated_ref_with_ajax').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
-  console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
-$('.populated_ref_with_ajax_in_modalReviewOrder').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
+$('.populated_ref_with_ajax, .populated_ref_with_ajax_in_modalReviewOrder').html(willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
   console.log( 'Now populating the ref like this: ' + willGrabBook + ' ' + willGrabChapter + ' : ' + willGrabVerse);
 
 $('.populated_verse_with_ajax').html(removedItalicsAndRef);
@@ -1039,7 +1000,7 @@ $( ".continueToPictures" ).on( "click", function(e) {
     console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited. Continuing to pictures.');
   $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
   $('.modal_customize_name').hide();
-  $('.modal_customize_picture').show('slow');
+  $('.modal_customize_picture').show();
   // when user returns to this modal, just in case they already have a picture selected
   $('.be_sure_to_click_the_one_you_like').hide();
 
@@ -1074,7 +1035,7 @@ $("form.name_input").submit(function(e) {
     console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited. Continuing to pictures.');
   $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
   $('.modal_customize_name').hide();
-  $('.modal_customize_picture').show('slow');
+  $('.modal_customize_picture').show();
   // when user returns to this modal, just in case they already have a picture selected
   $('.be_sure_to_click_the_one_you_like').hide();
 
@@ -1237,7 +1198,7 @@ if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited')) && ($('.reviewOrderC
       setTimeout(function(){
         console.log('automatically going back to customize name modal');
         $('.modal_customize_picture, .wrap_swiper_container_biblical, .wrap_swiper_container_flowers, .wrap_swiper_container_scenery').hide();
-        $('.modal_customize_name').show('slow');
+        $('.modal_customize_name').show();
         setTimeout(function(){
         $('body').find('#customize_name').focus();
       }, 100);
@@ -1936,21 +1897,6 @@ $("#menu").on("click", function() {
 /* *************************** */
 /* *************************** */
 
-/* *************************** */
-// BEGIN let customer know the flower will be centered manually
-/* *************************** */
-$('.modal_review_the_order').append('<div class="we_will_move_the_picture_up_more_toward_the_middle">For example, we will move the picture up a little, so it will be centered in the middle</div>');
-/* *************************** */
-// END let customer know the flower will be centered manually
-/* *************************** */
-
-/* *************************** */
-// BEGIN let customer know they can only order one item at a time
-/* *************************** */
-$(".modal_review_the_order").append("<div class='we_are_working_on_a_full_feature_shopping_cart'>We're still working on a full feature shopping cart for multiple items. Please order one item at a time. Thank you.</div>");
-/* *************************** */
-// END let customer know they can only order one item at a time
-/* *************************** */
 
 // BEGIN upon arrival, if no scripture is recorded
 $(".CreateYourOwnDesign").on("click", function () {
