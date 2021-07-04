@@ -480,56 +480,59 @@ input:-internal-autofill-selected {
     background-image: none !important;
     color: -internal-light-dark(black, white) !important;
 }
+.wrap_select_book_chapter_verse {
+  display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      height: 42px;
+}
 .select_book {
-	display: inline-block;
 border-width: 0px;
     border: 0;
     outline: 0;
     color: #d5ad6d;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
-    width: 155px;
+    width: 100%;
     background: #333333;
     padding: 0px;
-	padding-left: 2px;
 }
 .select_chapter {
-	display: inline-block;
 border-width: 0px;
     border: 0;
     outline: 0;
     color: #d5ad6d;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
-    width: 63px;
+    width: 65%;
     background: #333333;
     padding: 0px;
-	padding-left: 2px;
 }
 .select_verse {
-	display: inline-block;
 border-width: 0px;
     border: 0;
     outline: 0;
     color: #d5ad6d;
 	text-shadow: 2px 2px 1px #000000;
     height: 42px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-align: center;
-    width: 63px;
+    width: 65%;
     background: #333333;
     padding: 0px;
-	padding-left: 2px;
 }
 input.order-description:focus {
 outline:none!important;
@@ -1884,7 +1887,7 @@ font-weight: normal;
       width: 296px;
       text-align: center;
       line-height: 21px;
-      font-size: 19px;
+      font-size: 18px;
 }
 .we_are_working_on_a_full_feature_shopping_cart {
   position: absolute;
@@ -1893,5 +1896,8 @@ font-weight: normal;
       width: 296px;
       text-align: center;
       line-height: 21px;
-      font-size: 19px;
+      font-size: 18px;
+}
+.font_size_18px {
+  font-size: 18px;
 }
