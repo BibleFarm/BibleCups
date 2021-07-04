@@ -1947,7 +1947,7 @@ $('.modal_review_the_order').append('<div class="we_will_move_the_picture_up_mor
 /* *************************** */
 // BEGIN let customer know they can only order one item at a time
 /* *************************** */
-$(".modal_review_the_order").append("<div class='we_are_working_on_a_full_feature_shopping_cart'>We're still working on a full feature shopping cart for multiple items. Please order one item at a time. Thank you for your patience.</div>");
+$(".modal_review_the_order").append("<div class='we_are_working_on_a_full_feature_shopping_cart'>We're still working on a full feature shopping cart for multiple items. Please order one item at a time. Thank you.</div>");
 /* *************************** */
 // END let customer know they can only order one item at a time
 /* *************************** */
