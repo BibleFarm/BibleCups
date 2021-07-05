@@ -1538,6 +1538,10 @@ keyboard: {
 	enabled: true,
 	onlyInViewport: true,
 },
+autoplay: {
+  delay: 1500,
+  disableOnInteraction: true,
+},
 on: {
 	click: function(){
 	console.log(this.clickedIndex);
@@ -1582,6 +1586,10 @@ keyboard: {
 	enabled: true,
 	onlyInViewport: true,
 },
+autoplay: {
+  delay: 1500,
+  disableOnInteraction: true,
+},
 on: {
 	click: function(){
 	console.log(this.clickedIndex);
@@ -1609,6 +1617,33 @@ navigation: {
 });
 ////////////////////////////////////////////////////
 ////END Swiper scenery ///////////////////////
+////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////
+////BEGIN Swiper mySwiper_announce_fundraising ///////////////////////
+////////////////////////////////////////////////////
+$( ".announceFundraising" ).on( "click", function() {
+  $('.wrap_swiper_container_announce_fundraising').show();
+setTimeout(function(){
+      var mySwiper_announce_fundraising = new Swiper(".mySwiper_announce_fundraising", {
+keyboard: {
+	enabled: true,
+	onlyInViewport: true,
+},
+autoplay: {
+  delay: 1500,
+  disableOnInteraction: true,
+},
+navigation: {
+	nextEl: ".swiper-button-next",
+	prevEl: ".swiper-button-prev",
+},
+});
+}, 1000);
+});
+////////////////////////////////////////////////////
+////END Swiper mySwiper_announce_fundraising ///////////////////////
 ////////////////////////////////////////////////////
 
 

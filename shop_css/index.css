@@ -1381,6 +1381,18 @@ padding: 0;
 z-index: 2;
 filter: drop-shadow(0px 0px 4px #444444);
 }
+.wrap_swiper_container_announce_fundraising {
+position: fixed;
+display: none;
+top: 153px;
+    left: 12px;
+    width: 296px;
+    height: 296px;
+background: none;
+margin: 0 auto;
+padding: 0;
+z-index: 2;
+}
 .wrap_swiper_container_backgrounds {
 position: fixed;
 display: none;
@@ -1464,6 +1476,27 @@ z-index: 2;
 /* END swipers inside picture modal
 /* ************* */
 /* ************* */
+
+/* ************* */
+/* BEGIN swiper inside announce_fundraising
+/* ************* */
+.wrap_swiper_container_announce_fundraising > .mySwiper_announce_fundraising > .swiper-button-next
+ {
+   color: #eaff00;
+   filter: drop-shadow(0px 0px 4px #444444);
+}
+.wrap_swiper_container_announce_fundraising > .mySwiper_announce_fundraising > .swiper-button-prev
+{
+  color: #eaff00;
+  filter: drop-shadow(0px 0px 4px #444444);
+}
+/* ************* */
+/* END swiper inside announce_fundraising
+/* ************* */
+
+
+
+
 /* BEGIN swiper thumnails loop lighter gradients
 /* ************* */
 .mySwiper_backgrounds {
