@@ -66,7 +66,7 @@ function getWelcome() {
         var p = messageObj.p;
   //      $('#hidden_div_verse').html(verse);
   //      $('#hidden_div_ref').html(ref);
-        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured"><img class="" width="296" height="444" src="m/' + b + '-' + c + '-' + v + '.png" alt="" /></div><div class="sharing_sub_panel"><button type="button" class="changeVerse FBpixel_changeVerse flex_item bf_links" book="' + b + '" chapter="' + c + '" verse="' + v + '" picture="' + p + '">change verse</button><button type="button" class="addYourName FBpixel_addYourName flex_item bf_links">add YourName</button><button type="button" class="changePicture FBpixel_changePicture flex_item bf_links">change picture</button></div><button type="button" class="share FBpixel_share"><a class="bf_links" href="https://www.biblecups.com/share/mugs/' + b + '-' + c + '-' + v + '.html" target="_blank">share</a></div></button>');
+        $('.gofundme_flex-container').append('<div class="wrap_featured_item"><div class="placeholder_mug_featured-btn">featured-item-image<img class="m" width="296" height="444" src="m/' + b + '-' + c + '-' + v + '.png" alt="" /></div><div class="sharing_sub_panel"><button type="button" class="changeVerse FBpixel_changeVerse flex_item bf_links" book="' + b + '" chapter="' + c + '" verse="' + v + '" picture="' + p + '">change verse</button><button type="button" class="addYourName FBpixel_addYourName flex_item bf_links">add YourName</button><button type="button" class="changePicture FBpixel_changePicture flex_item bf_links">change picture</button></div><button type="button" class="share FBpixel_share"><a class="bf_links" href="https://www.biblecups.com/share/mugs/' + b + '-' + c + '-' + v + '.html" target="_blank">share</a></div></button>');
 
         $( ".gofundme_flex-container" ).on( "click", ".changeVerse, .addYourName, .changePicture", function(event) {
           // make sure when user clicks on a featured item, we update the hidden divs BEFORE the other function goes to see what the are
@@ -1009,7 +1009,7 @@ $( ".continueToPictures" ).on( "click", function(e) {
     $('.select_a_category_to_load_gallery').hide();
     $('.this_is_your_currently_selected_picture').show();
     $('.modal_customize_picture > .wrap_container_showing_selected_picture').show();
-    $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected');
+    $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected-btn');
   }
   // if user doesn't have a picture chosen, show them how to choose one
   else {
@@ -1044,7 +1044,7 @@ $("form.name_input").submit(function(e) {
     $('.select_a_category_to_load_gallery').hide();
     $('.this_is_your_currently_selected_picture').show();
     $('.modal_customize_picture > .wrap_container_showing_selected_picture').show();
-    $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected');
+    $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected-btn');
   }
   // if user doesn't have a picture chosen, show them how to choose one
   else {
@@ -1123,7 +1123,7 @@ $(".selected_verse").text(completeRefNeeded);
           $('.select_a_category_to_load_gallery').hide();
           $('.this_is_your_currently_selected_picture').show();
           $('.modal_customize_picture > .wrap_container_showing_selected_picture').show();
-          $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected');
+          $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected-btn');
         }
         // if user doesn't have a picture chosen, show them how to choose one
         else {
@@ -1152,8 +1152,8 @@ var selectedPicture = $(this).attr("src").replace(/p\\/, '').replace(/\.png/, ''
 $( "#hidden_picture_desired" ).text(selectedPicture);
 $('.container_showing_selected_picture').attr("src", "p/" + selectedPicture + ".png" );
 $('.container_showing_selected_picture_little_Left').attr("src", "p/" + selectedPicture + ".png" );
-console.log('Picture has been selected. Removed class "checkIfPictureIsSelected". Added class: "pictureHasBeenSelected"');
-$('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected');
+console.log('Picture has been selected. Removed class "checkIfPictureIsSelected". Added class: "pictureHasBeenSelected-btn"');
+$('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected-btn');
 // enable reviewOrder as long as we already have a name
 if ($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) {
 $('.reviewOrderCheck').addClass('reviewOrder');
@@ -1187,12 +1187,12 @@ $('img.container_showing_selected_picture_little_Left').removeClass('customCSSfo
 // enable reviewOrder as long as we already have a name
 $('.reviewOrderCheck').on( "click", function(e) {
   // got everything
-    if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
+    if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected-btn'))) {
       $('.reviewOrderCheck').addClass('reviewOrder');
-      console.log('nameHasBeenEdited-btn and pictureHasBeenSelected, so Added class: reviewOrder');
+      console.log('nameHasBeenEdited-btn and pictureHasBeenSelected-btn, so Added class: reviewOrder');
     }
     // still need name
-if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
+if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected-btn'))) {
         console.log('gotta a picture but still need a name');
       $('.reviewOrderCheck').html("let's add YourName").css('color','#ff5757').addClass('stillNeedToaddYourName');
       setTimeout(function(){
@@ -1205,7 +1205,7 @@ if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOr
     }, 3000);
 }
 // still need a picture
-if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && (!$('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
+if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && (!$('.reviewOrderCheck').hasClass('pictureHasBeenSelected-btn'))) {
 }
 });
 /*
@@ -1229,7 +1229,7 @@ $('#customize_name').focus();
 $( "body" ).on( "click", ".CreateYourOwnDesign, .changeVerse, .addYourName, .continueToPictures", function() {
   setTimeout(function() {
     if ($('#hidden_picture_desired').text() != 'nothing') {
-      $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected');
+      $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected-btn');
     }
   }, 1000);
 });
@@ -1932,6 +1932,15 @@ $("#menu").on("click", function() {
 /* *************************** */
 /* *************************** */
 
+// BEGIN featured items now clickable
+$('body').on( "click", "img.m", function(event) {
+$(this).parent().parent().find(".sharing_sub_panel > .addYourName").trigger({
+			type: "click",
+			which: 1
+		});
+});
+// END featured items now clickable
+
 
 // BEGIN upon arrival, if no scripture is recorded
 $(".CreateYourOwnDesign").on("click", function () {
@@ -1946,7 +1955,7 @@ $(".no_book_nor_chapter_nor_verse_selection_yet").show();
 
 // BEGIN if no picture is selected
 $(".reviewOrderCheck").on("click", function () {
-if (!$(this).hasClass('pictureHasBeenSelected')) {
+if (!$(this).hasClass('pictureHasBeenSelected-btn')) {
 $(this).css('color', 'rgb(255, 87, 87)').text('no picture selected yet');
 $('.you_need_to_click_on_a_picture').show();
 }

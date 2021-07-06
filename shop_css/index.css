@@ -787,11 +787,12 @@ width: 296px;
 height: 296px;
 text-align:center;
 }
-.placeholder_mug_featured {
+.placeholder_mug_featured-btn {
 display: inline-block;
 width: 296px;
 height: 444px;
 text-align:center;
+font-size: 0px;
 }
 .selected_bible_verse_fixed_on_mug-table {
   position: fixed;
@@ -1980,14 +1981,25 @@ font-weight: normal;
 .FBpixel_share,
 .FBpixel_changeVerse,
 .FBpixel_addYourName,
-.FBpixel_changePicture
+.FBpixel_changePicture,
+.FBpixel_step1_next_step2,
+.FBpixel_back_to_change_verse,
+.FBpixel_nameHasBeenEdited,
+.FBpixels_view_all_flowers,
+.FBpixels_view_all_scenery,
+.FBpixel_back_to_YourName,
+.FBpixel_review_your_design,
+.FBpixel_back_to_picture,
+.FBpixel_place_your_order,
+.FBpixel_back_to_review_order,
+.FBpixel_continue_to_checkout
  {
   background: none;
       border: none;
       font-family: 'OpenSansCondensed-Light';
       font-weight: bold;
       text-shadow: 2px 2px 1px #000000;
-      color: red;
+      color: #d5ad6d;
     padding: 0;
     font-size: 20px;
     cursor: pointer;
@@ -2004,7 +2016,7 @@ background: none;
     font-family: 'OpenSansCondensed-Light';
     font-weight: bold;
     text-shadow: 2px 2px 1px #000000;
-    color: red;
+    color: #d5ad6d;
     /* padding: 0; */
     font-size: 20px;
     cursor: pointer;
@@ -2013,3 +2025,4 @@ background: none;
 .FBpixel_menu {
   font-size: 0px;
 }
+img.m {cursor: pointer;}
