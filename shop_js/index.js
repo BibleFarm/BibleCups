@@ -983,22 +983,22 @@ $( ".rendered_customerName_in_modalReviewOrder > span" ).attr("style",newFontSiz
 $('#hidden_name_desired').text($('#customize_name').val());
 // continueToPictures
 if (($('#hidden_name_desired').text() != 'Your Name') && ($('#hidden_name_desired').text() != '') && ($('#hidden_name_desired').text() != ' ')) {
-  console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited');
-$('.continueToPictures').text('continue to pictures').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
-console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited also to reviewOrderCkeck');
-$('body').find('.reviewOrderCheck').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').text('review your design').css('color', '#d5ad6d');
+  console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited-btn');
+$('.continueToPictures').text('continue to pictures').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited-btn').css('color', '#d5ad6d');
+console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited-btn also to reviewOrderCkeck');
+$('body').find('.reviewOrderCheck').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited-btn').text('review your design').css('color', '#d5ad6d');
 } else {
-$('.continueToPictures').text('type name up there').removeClass('nameHasBeenEdited').addClass('checkIfNameIsEdited').css('color', '#ff5757');
-console.log('Added class: checkIfNameIsEdited. Removed class: nameHasBeenEdited also to reviewOrderCkeck');
-$('body').find('.reviewOrderCheck').addClass('checkIfNameIsEdited').removeClass('nameHasBeenEdited').removeClass('reviewOrder').text('review your design').css('color', '#d5ad6d');
+$('.continueToPictures').text('type name up there').removeClass('nameHasBeenEdited-btn').addClass('checkIfNameIsEdited').css('color', '#ff5757');
+console.log('Added class: checkIfNameIsEdited. Removed class: nameHasBeenEdited-btn also to reviewOrderCkeck');
+$('body').find('.reviewOrderCheck').addClass('checkIfNameIsEdited').removeClass('nameHasBeenEdited-btn').removeClass('reviewOrder').text('review your design').css('color', '#d5ad6d');
 }
 });
 // when click on continue to pictures
 $( ".continueToPictures" ).on( "click", function(e) {
   // checkIfNameIsEdited to enable continue to pictures
   if (($('#hidden_name_desired').text() != 'Your Name') && ($('#hidden_name_desired').text() != '') && ($('#hidden_name_desired').text() != ' ')) {
-    console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited. Continuing to pictures.');
-  $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
+    console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited-btn. Continuing to pictures.');
+  $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited-btn').css('color', '#d5ad6d');
   $('.modal_customize_name').hide();
   $('.modal_customize_picture').show();
   // when user returns to this modal, just in case they already have a picture selected
@@ -1032,8 +1032,8 @@ $( ".continueToPictures" ).on( "click", function(e) {
 $("form.name_input").submit(function(e) {
 
   if (($('#hidden_name_desired').text() != 'Your Name') && ($('#hidden_name_desired').text() != '') && ($('#hidden_name_desired').text() != ' ')) {
-    console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited. Continuing to pictures.');
-  $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited').css('color', '#d5ad6d');
+    console.log ('Name is no longer "Your Name" nor "" nor " ". Removed class: checkIfNameIsEdited. Added class: nameHasBeenEdited-btn. Continuing to pictures.');
+  $('.reviewOrderCheck').text('review your design').removeClass('checkIfNameIsEdited').addClass('nameHasBeenEdited-btn').css('color', '#d5ad6d');
   $('.modal_customize_name').hide();
   $('.modal_customize_picture').show();
   // when user returns to this modal, just in case they already have a picture selected
@@ -1155,7 +1155,7 @@ $('.container_showing_selected_picture_little_Left').attr("src", "p/" + selected
 console.log('Picture has been selected. Removed class "checkIfPictureIsSelected". Added class: "pictureHasBeenSelected"');
 $('.reviewOrderCheck').removeClass('checkIfPictureIsSelected').addClass('pictureHasBeenSelected');
 // enable reviewOrder as long as we already have a name
-if ($('.reviewOrderCheck').hasClass('nameHasBeenEdited')) {
+if ($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) {
 $('.reviewOrderCheck').addClass('reviewOrder');
 }
 });
@@ -1187,12 +1187,12 @@ $('img.container_showing_selected_picture_little_Left').removeClass('customCSSfo
 // enable reviewOrder as long as we already have a name
 $('.reviewOrderCheck').on( "click", function(e) {
   // got everything
-    if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
+    if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
       $('.reviewOrderCheck').addClass('reviewOrder');
-      console.log('nameHasBeenEdited and pictureHasBeenSelected, so Added class: reviewOrder');
+      console.log('nameHasBeenEdited-btn and pictureHasBeenSelected, so Added class: reviewOrder');
     }
     // still need name
-if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
+if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && ($('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
         console.log('gotta a picture but still need a name');
       $('.reviewOrderCheck').html("let's add YourName").css('color','#ff5757').addClass('stillNeedToaddYourName');
       setTimeout(function(){
@@ -1205,7 +1205,7 @@ if ((!$('.reviewOrderCheck').hasClass('nameHasBeenEdited')) && ($('.reviewOrderC
     }, 3000);
 }
 // still need a picture
-if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited')) && (!$('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
+if (($('.reviewOrderCheck').hasClass('nameHasBeenEdited-btn')) && (!$('.reviewOrderCheck').hasClass('pictureHasBeenSelected'))) {
 }
 });
 /*
