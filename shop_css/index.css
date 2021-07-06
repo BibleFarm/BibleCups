@@ -1973,3 +1973,31 @@ font-weight: normal;
 .font_size_16px {
   font-size: 16px;
 }
+.FBpixel_menu,
+.FBpixel_CreateYourOwnDesign,
+.FBpixel_about,
+.FBpixel_link_to_biblefarm,
+.FBpixel_follow_instagram,
+.FBpixel_follow_facebook,
+.FBpixel_follow_twitter,
+.FBpixel_contact_whatsapp,
+.FBpixel_contact_messenger,
+.FBpixel_contact_telegram,
+.FBpixel_share,
+.FBpixel_changeVerse,
+.FBpixel_addYourName,
+.FBpixel_changePicture
+
+
+
+ {
+  background: none;
+      border: none;
+      font-family: 'OpenSansCondensed-Light';
+      font-weight: bold;
+      text-shadow: 2px 2px 1px #000000;
+      color: red;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
