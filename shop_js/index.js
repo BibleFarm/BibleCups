@@ -1526,7 +1526,7 @@ navigation: {
 ////////////////////////////////////////////////////
 ////BEGIN Swiper flowers ///////////////////////
 ////////////////////////////////////////////////////
-$( "#view-flowers" ).on( "click", function() {
+$( "#view-flowers" ).one( "click", function() {
   $('.select_a_category_to_load_gallery').hide();
   $('.wrap_swiper_container_biblical').hide();
   $('.wrap_swiper_container_scenery').hide();
@@ -1554,9 +1554,14 @@ navigation: {
 },
 });
 
-	  var hidden_lastClickedPictureIndex_flowers = +$('#hidden_lastClickedPictureIndex_flowers').text();
-	  mySwiper_flowers.slideTo(hidden_lastClickedPictureIndex_flowers);
-
+$(".swiper-container").mouseenter(function() {
+  mySwiper_flowers.autoplay.stop();
+  console.log('slider stopped');
+});
+$(".swiper-container").mouseleave(function() {
+  mySwiper_flowers.autoplay.start();
+  console.log('slider started again');
+});
     mySwiper_flowers.on('click', function() {
       console.log('*** mySwiper_flowers.realIndex', mySwiper_flowers.realIndex);
       var hidden_picture_desired = $('.mySwiper_flowers > .swiper-wrapper > .swiper-slide-active > div > img').attr('src').replace(/p\\/, '').replace(/\.png/, '');
@@ -1567,6 +1572,12 @@ navigation: {
 
 }, 1000);
 });
+$( "#view-flowers" ).on( "click", function() {
+  $('.select_a_category_to_load_gallery').hide();
+  $('.wrap_swiper_container_biblical').hide();
+  $('.wrap_swiper_container_scenery').hide();
+  $('.wrap_swiper_container_flowers').show();
+});
 ////////////////////////////////////////////////////
 ////END Swiper flowers ///////////////////////
 ////////////////////////////////////////////////////
@@ -1574,7 +1585,7 @@ navigation: {
 ////////////////////////////////////////////////////
 ////BEGIN Swiper scenery ///////////////////////
 ////////////////////////////////////////////////////
-$( "#view-scenery" ).on( "click", function() {
+$( "#view-scenery" ).one( "click", function() {
   $('.select_a_category_to_load_gallery').hide();
   $('.wrap_swiper_container_biblical').hide();
   $('.wrap_swiper_container_scenery').show();
@@ -1602,9 +1613,14 @@ navigation: {
 },
 });
 
-	  var hidden_lastClickedPictureIndex_scenery = +$('#hidden_lastClickedPictureIndex_scenery').text();
-	  mySwiper_scenery.slideTo(hidden_lastClickedPictureIndex_scenery);
-
+$(".swiper-container").mouseenter(function() {
+  mySwiper_scenery.autoplay.stop();
+  console.log('slider stopped');
+});
+$(".swiper-container").mouseleave(function() {
+  mySwiper_scenery.autoplay.start();
+  console.log('slider started again');
+});
     mySwiper_scenery.on('click', function() {
       console.log('*** mySwiper_scenery.realIndex', mySwiper_scenery.realIndex);
       var hidden_picture_desired = $('.mySwiper_scenery > .swiper-wrapper > .swiper-slide-active > div > img').attr('src').replace(/p\\/, '').replace(/\.png/, '');
@@ -1615,6 +1631,12 @@ navigation: {
 
 }, 1000);
 });
+$( "#view-scenery" ).on( "click", function() {
+  $('.select_a_category_to_load_gallery').hide();
+  $('.wrap_swiper_container_biblical').hide();
+  $('.wrap_swiper_container_scenery').show();
+  $('.wrap_swiper_container_flowers').hide();
+});
 ////////////////////////////////////////////////////
 ////END Swiper scenery ///////////////////////
 ////////////////////////////////////////////////////
@@ -1623,7 +1645,7 @@ navigation: {
 ////////////////////////////////////////////////////
 ////BEGIN Swiper mySwiper_announce_fundraising ///////////////////////
 ////////////////////////////////////////////////////
-$( ".announceFundraising" ).on( "click", function() {
+$( ".announceFundraising" ).one( "click", function() {
   $('.wrap_swiper_container_announce_fundraising').show();
 setTimeout(function(){
       var mySwiper_announce_fundraising = new Swiper(".mySwiper_announce_fundraising", {
@@ -1640,7 +1662,20 @@ navigation: {
 	prevEl: ".swiper-button-prev",
 },
 });
+
+$(".swiper-container").mouseenter(function() {
+  mySwiper_announce_fundraising.autoplay.stop();
+  console.log('slider stopped');
+});
+$(".swiper-container").mouseleave(function() {
+  mySwiper_announce_fundraising.autoplay.start();
+  console.log('slider started again');
+});
+
 }, 1000);
+});
+$( ".announceFundraising" ).on( "click", function() {
+  $('.wrap_swiper_container_announce_fundraising').show();
 });
 ////////////////////////////////////////////////////
 ////END Swiper mySwiper_announce_fundraising ///////////////////////

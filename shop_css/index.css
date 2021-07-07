@@ -1912,7 +1912,7 @@ font-weight: normal;
     align-items: center;
 }
 .help_icons_flex_item {
-  padding: 8px;
+  padding: 3px;
 }
 .we_will_move_the_picture_up_more_toward_the_middle_1 {
   position: absolute;
@@ -2007,6 +2007,7 @@ font-weight: normal;
 .FBpixel_follow_instagram,
 .FBpixel_follow_facebook,
 .FBpixel_follow_twitter,
+.FBpixel_follow_pinterest,
 .FBpixel_contact_whatsapp,
 .FBpixel_contact_messenger,
 .FBpixel_contact_telegram
