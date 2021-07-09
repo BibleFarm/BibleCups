@@ -407,7 +407,7 @@ var order_id = $('#order_id').val();
 		// So, let's modify the DOM for AD_01
 		var DOM_modified_for_AD_01 = $('html').html()
 		.replace('../Sample_Option_1.js', '')
-		.replace('bgc-0003', 'bgc-0012')
+		.replace('bgc-0003', 'bgc-0015')
 		.replace("My Name", "His Name")
 		.replace("s_ad_big_message_1", "so I asked him")
 		.replace("s_ad_big_message_2", "What's your favorite verse?")

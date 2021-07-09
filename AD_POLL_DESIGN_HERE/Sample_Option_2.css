@@ -605,15 +605,16 @@ position: fixed;
 .ad_big_message_1 {
   position: fixed;
       display: block;
-      top: 1000px;
+      top: 900px;
       left: 0px;
       width: 1200px;
-      height: 200px;
-      line-height: 200px;
+      height: 300px;
+      line-height: 300px;
       text-align: left;
       font-family: "PT_Sans-Narrow-Web-Regular";
-      font-size: 200px;
+      font-size: 300px;
       color: #d5ad6d;
+      padding-left: 50px;
 }
 .ad_big_message_2 {
 position: fixed;
