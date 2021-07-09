@@ -129,16 +129,7 @@ $(document).ready(function (){
 $('#order_id').on('keyup', function() {
 var idNeeded = $(this).val();
 $('#show_order_id').text(idNeeded);
-$('#fname_01_10').val(idNeeded + '_01_10');
-$('#fname_11_20').val(idNeeded + '_11_20');
-$('#fname_21_30').val(idNeeded + '_21_30');
-$('#fname_31_40').val(idNeeded + '_31_40');
-$('#fname_41_50').val(idNeeded + '_41_50');
-$('#fname_51_60').val(idNeeded + '_51_60');
-$('#fname_61_70').val(idNeeded + '_61_70');
-$('#fname_71_80').val(idNeeded + '_71_80');
-$('#fname_81_90').val(idNeeded + '_81_90');
-$('#fname_91_100').val(idNeeded + '_91_100');
+$('#fname_opt_1').val(idNeeded + '_opt_1');
 });
 // BEGIN Render the CUSTOMER_NAME_table-cell
 $( "#customize_name" ).on( "focus click", function() {
@@ -398,12 +389,12 @@ var order_id = $('#order_id').val();
 
 
 		////////////////////////////////////
-		// BEGIN node JS file 01_10 ///////
+		// BEGIN node JS file opt_1 ///////
 		////////////////////////////////////
 		// fill the input that will contain the content of the js file to create
-		$('#populate_01_10').on('click', function() {
+		$('#populate_opt_1').on('click', function() {
 		var idNeeded = $('#order_id').val();
-		$('#fname_01_10').val(idNeeded + '_01_10');
+		$('#fname_opt_1').val(idNeeded + '_opt_1');
 		// node JS File to run these 10 images for this verse
 		var commentFileTitle = "// node JS File to run these 10 images for this verse\n\n";
 		// var to populate initial for Autofill node JS File Content
@@ -433,7 +424,7 @@ var order_id = $('#order_id').val();
 		// AD_01 END
 
 		// fill textarea with complete code to render all ads
-		$('#fcontent_01_10').val(
+		$('#fcontent_opt_1').val(
 		commentFileTitle +
 		initialRequireFileSystem +
 		finishedWithAD_01
@@ -459,19 +450,19 @@ var order_id = $('#order_id').val();
 		        };
 
 
-		    var create = document.getElementById('create_01_10');
-		    var fileContent = document.getElementById("fcontent_01_10");
+		    var create = document.getElementById('create_opt_1');
+		    var fileContent = document.getElementById("fcontent_opt_1");
 
 		    create.addEventListener('click', function() {
-		        const fileName = document.getElementById("fname_01_10").value;
-		        document.getElementById("downloadlink_01_10").setAttribute("download", fileName);
-		        var link = document.getElementById('downloadlink_01_10');
+		        const fileName = document.getElementById("fname_opt_1").value;
+		        document.getElementById("downloadlink_opt_1").setAttribute("download", fileName);
+		        var link = document.getElementById('downloadlink_opt_1');
 		        link.href = makeTextFile(fileContent.value);
 		        // link.style.display = 'block';
 		    }, false);
 		})();
 		////////////////////////////////////
-		// END node JS file 01_10 ///////
+		// END node JS file opt_1 ///////
 		////////////////////////////////////
 		////////////////////////////////////
 		// BEGIN node JS file 11_20 ///////
