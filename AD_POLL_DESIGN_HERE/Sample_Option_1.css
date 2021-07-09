@@ -605,14 +605,14 @@ position: fixed;
 .ad_big_message_1 {
   position: fixed;
       display: block;
-      top: 1094px;
-      left: 272px;
+      top: 1000px;
+      left: 0px;
       width: 1200px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
+      height: 200px;
+      line-height: 200px;
+      text-align: right;
       font-family: "PT_Sans-Narrow-Web-Regular";
-      font-size: 186px;
+      font-size: 200px;
       color: #d5ad6d;
 }
 .ad_big_message_2 {
