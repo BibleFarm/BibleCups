@@ -134,10 +134,10 @@ $('#fname_opt_2').val(idNeeded + '_opt_2');
 // BEGIN Render the CUSTOMER_NAME_table-cell
 $( "#customize_name" ).on( "focus click", function() {
 	function renderIn_modalName() {
-		$('.CUSTOMER_NAME_table-cell').html(
+		$('.name').html(
 			'<span>' + $('#customize_name').val() + '</span>'
 		);
-		$('.CUSTOMER_NAME_table-cell').textfill({
+		$('.name').textfill({
 			maxFontPixels: 2500
 		});
 	}

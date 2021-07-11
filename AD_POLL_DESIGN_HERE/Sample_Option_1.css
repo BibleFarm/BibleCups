@@ -246,7 +246,7 @@ height: 214px;
 }
 .bot_center {
   position: absolute;
-      left: 100px;
+      left: 364px;
       top: 980px;
       display: table-cell;
       width: 740px;
@@ -327,7 +327,7 @@ position: absolute;
 .wrap_verse_left {
 position: absolute;
     display: flex;
-    left: 66px;
+    left: 330px;
     top: 200px;
     width: 800px;
     height: 200px;
@@ -511,7 +511,7 @@ img.dupe_container_showing_selected_picture_little_Left {
   position: fixed;
       display: flex;
       top: 460px;
-      left: 100px;
+      left: 364px;
       width: 740px;
       height: 600px;
       flex-direction: row;
@@ -604,16 +604,17 @@ position: fixed;
 }
 .ad_big_message_1 {
   position: fixed;
-      display: block;
+      display: none;
       top: 900px;
       left: 0px;
-      width: 1150px;
+      width: 1200px;
       height: 300px;
       line-height: 300px;
-      text-align: right;
+      text-align: left;
       font-family: "PT_Sans-Narrow-Web-Regular";
-      font-size: 500px;
+      font-size: 400px;
       color: #d5ad6d;
+      padding-left: 50px;
 }
 .ad_big_message_2 {
 position: fixed;
