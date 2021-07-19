@@ -1885,6 +1885,7 @@ font-weight: normal;
     }
     .about_flexed_item {
       padding: 4px;
+      line-height: 23px;
     }
     .help_flexed_content {
       display: flex;
